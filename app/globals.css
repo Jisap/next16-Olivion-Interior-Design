@@ -12,16 +12,30 @@
   --white: #FFF;
   --black: #000;
 
-  --CalSans: var(--font-calsans), sans-serif;
-  --GolosText: var(--font-golostext), sans-serif;
-  --Audiowide: var(--font-audiowide), sans-serif;
-
   --transition-regular: 0.3s;
   --transition-slow: 0.6s
 }
 
+@theme {
+  /* Colores personalizados */
+  --color-prim: #CAA05C;
+  --color-text: #1C1C1D;
+  --color-body: #F6F6F6;
+  --color-white: #FFF;
+  --color-black: #000;
+
+  /* Transiciones personalizadas */
+  --transition-duration-regular: 0.3s;
+  --transition-duration-slow: 0.6s;
+}
+
 body {
   background-color: var(--body);
+
+  /* Define font family variables here where Next.js font variables are available */
+  --CalSans: var(--font-calsans), sans-serif;
+  --GolosText: var(--font-golostext), sans-serif;
+  --Audiowide: var(--font-audiowide), sans-serif;
 }
 
 .CalSans {
