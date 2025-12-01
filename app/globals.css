@@ -1,26 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Golos+Text:wght@400..900&display=swap');
+
+@import "bootstrap-icons/font/bootstrap-icons.css";
+@import "remixicon/fonts/remixicon.css";
+
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  --prim: #CAA05C;
+  --text: #1C1C1D;
+  --body: #F6F6F6;
+  --white: #FFF;
+  --black: #000;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --CalSans: var(--font-calsans), sans-serif;
+  --GolosText: var(--font-golostext), sans-serif;
+  --Audiowide: var(--font-audiowide), sans-serif;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --transition-regular: 0.3s;
+  --transition-slow: 0.6s
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--body);
+}
+
+.CalSans {
+  font-family: var(--CalSans);
+}
+
+.GolosText {
+  font-family: var(--GolosText);
+}
+
+.Audiowide {
+  font-family: var(--Audiowide);
 }
