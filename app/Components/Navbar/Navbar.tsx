@@ -12,17 +12,37 @@ type NavLink = {
 
 const navLinks: NavLink[] = [
   { label: "Home", href: "/" },
+  { label: "Service", href: "/UI-Components/Pages/Services" },
   {
     label: "Projects",
     href: "/UI-Components/Projects",
     dropdown: [
       { label: "Projects", href: "/UI-Components/Projects" },
-      { label: "Project Details", href: "/UI-Components/Project-Details" },
+      { label: "Project Details", href: "/UI-Components/Projects/2" },
     ]
   },
-  { label: "About", href: "/about" },
-  { label: "Services", href: "/services" },
-  { label: "Contact", href: "/contact" },
+  {
+    label: "Blog",
+    href: "/UI-Components/Blogs",
+    dropdown: [
+      { label: "Blog", href: "/UI-Components/Blogs" },
+      { label: "Blog Details", href: "/UI-Components/Blogs/2" },
+    ]
+  },
+  {
+    label: "Pages",
+    href: "#",
+    dropdown: [
+      { label: "About", href: "/UI-Components/Pages/about" },
+      { label: "Team", href: "/UI-Components/Pages/Teams" },
+      { label: "Gallery", href: "/UI-Components/Pages/Gallery" },
+      { label: "Contact", href: "/UI-Components/Pages/Contact" },
+      { label: "Page 404", href: "/UI-Components/Pages/Page404" },
+    ]
+  },
+  { label: "Contac Us", href: "/UI-Components/Pages/Contact" },
+
+
 ]
 
 export const Navbar = () => {
@@ -79,7 +99,7 @@ export const Navbar = () => {
                           href={item.href}
                           className="block px-4 py-2 text-md rounded-md hover:text-prim transition-all duration-300"
                         >
-                          <i className="bi bi-gear text-xs"></i>{item.label}
+                          <i className="bi bi-gear text-xs"></i> {item.label}
                         </Link>
                       ))}
                     </div>
@@ -96,6 +116,24 @@ export const Navbar = () => {
               )
             )}
           </div>
+        </div>
+
+        {/* Right section */}
+        <div className="flex items-center gap-4">
+          <button className="hidden lg:flex items-center gap-1">
+            <i className="bi bi-telephone-inbound text-2xl px-3 py-2 rounded-full"></i>
+
+            <div className="flex flex-col items-start">
+              <p>Call Us Now</p>
+              <h3 className="text-prim GolosText">+91 (123) 4567890</h3>
+            </div>
+          </button>
+
+          <Link href="/UI-Components/Pages/Contact">
+            <button className="">
+              Get a Quote
+            </button>
+          </Link>
         </div>
       </div>
     </nav>
