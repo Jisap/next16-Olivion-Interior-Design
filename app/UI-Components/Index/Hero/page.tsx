@@ -57,7 +57,7 @@ const Hero = () => {
                   </Link>
                 </button>
 
-                <div className="hero-content-img absolute top-10 right-10 cursor-pointer hidden md:block">
+                <div className="hero-content-img absolute top-10 right-10 cursor-pointer hidden 3xl:block">
                   <Image
                     src={HeroImg2}
                     alt="HeroImg2"
