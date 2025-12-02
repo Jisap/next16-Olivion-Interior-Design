@@ -86,7 +86,7 @@ export const Navbar = () => {
             {navLinks.map((link) =>
               link.dropdown ? (
                 <div key={link.label} className="relative group z-50">
-                  <div className="flex menu-links text-lg xl:text-xl items-center gap-1 hover:text-prim transition-all duration-300 cursor-pointer whitespace-nowrap">
+                  <div className="flex menu-link text-lg xl:text-xl items-center gap-1 hover:text-prim transition-all duration-300 cursor-pointer whitespace-nowrap">
                     <Link href={link.href} className="hover:text-prim transition-all duration-300">
                       {link.label}
                     </Link>
