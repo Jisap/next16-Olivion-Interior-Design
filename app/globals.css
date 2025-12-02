@@ -135,3 +135,48 @@ body {
   backdrop-filter: blur(5px);
   color: var(--white);
 }
+
+.partner-swiper {
+  padding: 20px !important;
+}
+
+.partner-img {
+  transition: var(--transition-regular);
+  cursor: pointer;
+}
+
+.partner-img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 991px) {
+  .hero {
+    height: 100%;
+    margin-top: 9%;
+  }
+
+  .hero-content-img {
+    top: 75%;
+
+  }
+}
+
+@media (max-width: 575px) {
+  .hero {
+    margin-top: 12%;
+  }
+
+  .hero-content-img {
+    top: 55% !important;
+  }
+}
+
+@media (max-width: 1048px) {
+  .hero {
+    margin-top: 6%;
+  }
+
+  .hero-content-img {
+    top: 55% !important;
+  }
+}
