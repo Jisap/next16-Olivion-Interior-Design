@@ -82,11 +82,11 @@ export const Navbar = () => {
           </Link>
 
           {/* Destop Nav */}
-          <div className="hidden lg:flex space-x-6 menu-link relative ms-10">
+          <div className="hidden lg:flex space-x-4 menu-link relative ms-10">
             {navLinks.map((link) =>
               link.dropdown ? (
                 <div key={link.label} className="relative group z-50">
-                  <div className="flex menu-links text-xl items-center gap-1 hover:text-prim transition-all duration-300 cursor-pointer">
+                  <div className="flex menu-links text-lg xl:text-xl items-center gap-1 hover:text-prim transition-all duration-300 cursor-pointer whitespace-nowrap">
                     <Link href={link.href} className="hover:text-prim transition-all duration-300">
                       {link.label}
                     </Link>
@@ -109,7 +109,7 @@ export const Navbar = () => {
                 <Link
                   key={link.label}
                   href={link.href}
-                  className="text-xl hover:text-prim transition-all duration-300"
+                  className="text-lg xl:text-xl hover:text-prim transition-all duration-300 whitespace-nowrap"
                 >
                   {link.label}
                 </Link>
@@ -120,7 +120,7 @@ export const Navbar = () => {
 
         {/* Right section */}
         <div className="flex items-center gap-4">
-          <button className="hidden lg:flex items-center gap-1">
+          <button className="hidden xl:flex items-center gap-1">
             <i className="bi bi-telephone-inbound text-2xl px-3 py-2 rounded-full"></i>
 
             <div className="flex flex-col items-start">
@@ -130,7 +130,7 @@ export const Navbar = () => {
           </button>
 
           <Link href="/UI-Components/Pages/Contact">
-            <button className="bg-prim text-white font-medium px-6 py-3 rounded-full hover:bg-white hover:text-black border border-transparent hover:border-gray-400 cursor-pointer transition-all duration-300">
+            <button className="flex bg-prim text-white font-medium px-4 py-2 lg:px-6 lg:py-3 rounded-full hover:bg-white hover:text-black border border-transparent hover:border-gray-400 cursor-pointer transition-all duration-300">
               Get a Quote
             </button>
           </Link>
@@ -148,7 +148,7 @@ export const Navbar = () => {
       {/* Mobile menu */}
       <div
         className={`
-          lg_hidden bg-white border-t border-gray-400 overflow-hidden transition-all duration-500
+          lg:hidden bg-white border-t border-gray-400 overflow-hidden transition-all duration-500
           ${mobileMenuOpen
             ? "max-h-[700px] opacity-100 py-4"
             : "max-h-0 opacity-0 py-0"
