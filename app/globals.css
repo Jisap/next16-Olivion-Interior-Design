@@ -138,6 +138,25 @@ body {
   color: var(--white);
 }
 
+.hero-content-img2 i {
+  position: absolute;
+  top: 90%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  color: var(--white);
+}
+
+
+
 .partner-swiper {
   padding: 20px !important;
 }

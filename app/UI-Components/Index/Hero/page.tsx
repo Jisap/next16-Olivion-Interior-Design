@@ -51,11 +51,25 @@ const Hero = () => {
                   Whether it's your home, office or a commercial project, we are always dedicated to bringing your vision to life.
                 </p>
 
-                <button className="mt-9 border border-gray-500/50 px-5 py-3 rounded-full GolosText font-semibold hover:bg-prim hover:text-white hover:border-transparent transition-all duration-300 cursor-pointer group">
-                  <Link href="/UI-Components/Pages/Services">
-                    Get Our Services <i className="bi bi-arrow-right ps-1"></i>
-                  </Link>
-                </button>
+                <div className="flex items-center gap-5">
+                  {/* Botón: siempre visible */}
+                  <button className="mt-9 border border-gray-500/50 px-5 py-3 rounded-full GolosText font-semibold hover:bg-prim hover:text-white hover:border-transparent transition-all duration-300 cursor-pointer group">
+                    <Link href="/UI-Components/Pages/Services">
+                      Get Our Services <i className="bi bi-arrow-right ps-1"></i>
+                    </Link>
+                  </button>
+
+                  {/* Imagen: solo visible por debajo de 3xl */}
+                  <div className="relative block 3xl:hidden mt-9 hero-content-img2">
+                    <Image
+                      src={HeroImg2}
+                      alt="HeroImg2"
+                      height={52}
+                      className="rounded-full"
+                    />
+                    <i className="bi bi-play-fill absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></i>
+                  </div>
+                </div>
 
                 <div className="hero-content-img absolute top-10 right-10 cursor-pointer hidden 3xl:block">
                   <Image
