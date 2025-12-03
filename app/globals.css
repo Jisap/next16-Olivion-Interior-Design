@@ -213,3 +213,53 @@ body {
     top: 55% !important;
   }
 }
+
+.about {
+  background-image: url(../public/images/About-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.title {
+  position: relative;
+}
+
+/* Lineas decorativas */
+
+.title::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(131, 131, 131, 0.3);
+}
+
+.title::before {
+  content: "";
+  position: absolute;
+  top: -20%;
+  right: 10%;
+  width: 1px;
+  height: 250px;
+  background-color: rgba(131, 131, 131, 0.3);
+}
+
+.title-span {
+  position: relative;
+}
+
+/* Puntito decorativo */
+.title-span::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 9%;
+  width: 8px;
+  height: 8px;
+  transform: translate(-50%, -50%);
+  border-radius: 100%;
+  background-color: var(--prim)
+}
