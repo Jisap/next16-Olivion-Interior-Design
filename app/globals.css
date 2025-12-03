@@ -140,11 +140,11 @@ body {
 
 .hero-content-img2 i {
   position: absolute;
-  top: 90%;
-  left: 90%;
+  top: 80%;
+  left: 95%;
   transform: translate(-50%, -50%);
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   font-size: 2rem;
   display: flex;
   align-items: center;
@@ -213,4 +213,3 @@ body {
     top: 55% !important;
   }
 }
-

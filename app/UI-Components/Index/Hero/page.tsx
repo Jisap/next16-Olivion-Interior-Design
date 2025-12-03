@@ -65,6 +65,7 @@ const Hero = () => {
                       src={HeroImg2}
                       alt="HeroImg2"
                       height={52}
+                      width={252}
                       className="rounded-full"
                     />
                     <i className="bi bi-play-fill absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></i>
