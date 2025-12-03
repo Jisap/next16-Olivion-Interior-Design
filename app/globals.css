@@ -170,18 +170,6 @@ body {
   transform: scale(1.1);
 }
 
-
-
-@media (max-width: 1024px) {
-  .hero {
-    margin-top: 26%;
-  }
-
-  .hero-content-img {
-    top: 55% !important;
-  }
-}
-
 @media (max-width: 1024px) {
   .hero {
     margin-top: 26%;
@@ -200,17 +188,42 @@ body {
 
   .hero-content-img {
     top: 85%;
+  }
 
+  .about {
+    background-position: top center;
+  }
+
+  /* Letras "Olivion" */
+  .service:after {
+    font-size: 8rem;
+  }
+
+  .service-img {
+    transform: scale(1);
+    opacity: 1;
+    transition: var(--transition-slow);
   }
 }
 
+/* Tablets y pantallas medianas (≤1224px) */
+@media (max-width: 1224px) {
+
+  /* Ocultamos la imagen decorativa porque no queda bien posicionada */
+  .service::before {
+    display: none;
+  }
+}
+
+/* Móviles pequeños (≤575px) */
 @media (max-width: 575px) {
   .hero {
     margin-top: 18%;
   }
 
-  .hero-content-img {
-    top: 55% !important;
+  /* Ocultamos la imagen en dispositivos pequeños */
+  .service::before {
+    display: none;
   }
 }
 
@@ -287,6 +300,41 @@ body {
 
 .paralex-content {
   height: 80vh;
+}
+
+.service::after {
+  content: "Olivion";
+  position: absolute;
+  line-height: 9rem;
+  bottom: 0;
+  left: 10%;
+  font-size: 12rem;
+  font-weight: 800;
+  font-family: var(--Audiowide);
+  opacity: 0.1;
+  color: gray;
+}
+
+.service::before {
+  content: "";
+  position: absolute;
+  background-image: url(../public/images/service-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  bottom: -13%;
+  right: 10%;
+  /* Tamaño responsivo basado en viewport */
+  width: 42vw;
+  /* 42% del ancho de la ventana */
+  height: 23vw;
+  /* Mantiene proporción aproximada 16:9 */
+  max-width: 800px;
+  /* Límite máximo en pantallas muy grandes */
+  max-height: 450px;
+  min-width: 350px;
+  /* Límite mínimo antes de ocultar */
+  min-height: 200px;
 }
 
 .service-img {
