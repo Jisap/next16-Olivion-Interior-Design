@@ -10,7 +10,7 @@ import "swiper/css/effect-creative"
 
 export const ExpertiseSlider = () => {
   return (
-    <div className="expertise-slider-wrapper px-[8%] lg:px-[12%] -mt-32 mb-32 relative z-10">
+    <div className="expertise-slider-wrapper px-[8%] lg:px-[12%] -mt-10 md:-mt-32 mb-10 md:mb-32 relative z-10">
       <div className="expertise-slider">
         <Swiper
           modules={[Autoplay, EffectCreative]}
