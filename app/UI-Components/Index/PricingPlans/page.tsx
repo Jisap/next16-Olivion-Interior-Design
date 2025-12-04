@@ -1,9 +1,13 @@
 import React from 'react'
 
-const page = () => {
+const PricingPlans = () => {
   return (
-    <div>page</div>
+    <>
+      <div className='px-[8%] lg:px-[12%] py-20 mt-20'>
+        Pricing Plans
+      </div>
+    </>
   )
 }
 
-export default page
+export default PricingPlans

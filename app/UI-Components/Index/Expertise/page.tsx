@@ -6,14 +6,6 @@ import expertise2 from "../../../../public/images/expertise2.jpg"
 import expertise3 from "../../../../public/images/expertise3.jpg"
 import expertise4 from "../../../../public/images/expertise4.jpg"
 import { TitleWithDot } from "@/lib/TitleWithDot"
-import expertiseSlide1 from "../../../../public/images/banner-slide-1.jpg"
-import expertiseSlide2 from "../../../../public/images/banner-slide-2.jpg"
-import { Swiper, SwiperSlide } from "swiper/react"
-import { Autoplay, EffectCreative } from "swiper/modules"
-import "swiper/css"
-import "swiper/css/effect-creative"
-
-
 
 const ExpertiseData = [
   {
@@ -89,49 +81,6 @@ export const Expertise = () => {
                 </div>
               </div>
             ))}
-          </div>
-
-          {/* Slider con el mismo ancho que el contenido */}
-          <div className="expertise-slider mt-20">
-            <Swiper
-              modules={[Autoplay, EffectCreative]}
-              effect="creative"
-              creativeEffect={{
-                prev: {
-                  // Slide que sale: se va a la izquierda escalando a 0
-                  translate: ["-100%", 0, 0],
-                  scale: 0,
-                },
-                next: {
-                  // Slide que entra: viene desde la derecha escalando desde 0 a 1
-                  translate: ["100%", 0, 0],
-                  scale: 0,
-                },
-              }}
-              spaceBetween={0}
-              slidesPerView={1}
-              loop={true}
-              autoplay={{
-                delay: 2500,
-                disableOnInteraction: false,
-              }}
-              speed={2000}
-            >
-              <SwiperSlide>
-                <Image
-                  src={expertiseSlide1}
-                  alt="Expertise Slide 1"
-                  className="w-full h-full object-cover rounded-2xl"
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <Image
-                  src={expertiseSlide2}
-                  alt="Expertise Slide 2"
-                  className="w-full h-full object-cover rounded-2xl"
-                />
-              </SwiperSlide>
-            </Swiper>
           </div>
         </div>
       </div>

@@ -370,12 +370,20 @@ body {
   }
 }
 
+/* Wrapper para posicionar el slider entre secciones */
+.expertise-slider-wrapper {
+  position: relative;
+  z-index: 10;
+}
+
 .expertise-slider {
   width: 100%;
   max-width: 100%;
+  /* Asegura que el slider no exceda el ancho máximo */
   border-radius: 20px;
   overflow: hidden;
   aspect-ratio: 16 / 9;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
 }
 
 .expertise-slider .swiper {
