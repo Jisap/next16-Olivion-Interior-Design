@@ -418,3 +418,22 @@ body {
   background: linear-gradient(to bottom, #00000096 10%, #00000000);
   z-index: -1;
 }
+
+.pricing-card {
+  position: relative;
+  z-index: 1;
+}
+
+.pricing-card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../public/images/pricing-card-bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  z-index: -1;
+}
