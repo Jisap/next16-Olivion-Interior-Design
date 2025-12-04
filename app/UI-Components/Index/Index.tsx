@@ -6,6 +6,7 @@ import { Services } from "./Services/page"
 import { Expertise } from "./Expertise/page"
 import { ExpertiseSlider } from "./ExpertiseSlider/page"
 import { PricingPlans } from "./PricingPlans/page"
+import { Testimonial } from "./Testimonial/page"
 
 Image
 
@@ -19,6 +20,7 @@ export const Index = () => {
       <Expertise />
       <ExpertiseSlider />
       <PricingPlans />
+      <Testimonial />
     </>
 
 
