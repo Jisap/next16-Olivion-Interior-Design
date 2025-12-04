@@ -9,8 +9,9 @@ import { TitleWithDot } from "@/lib/TitleWithDot"
 import expertiseSlide1 from "../../../../public/images/banner-slide-1.jpg"
 import expertiseSlide2 from "../../../../public/images/banner-slide-2.jpg"
 import { Swiper, SwiperSlide } from "swiper/react"
-import { Autoplay } from "swiper/modules"
+import { Autoplay, EffectCreative } from "swiper/modules"
 import "swiper/css"
+import "swiper/css/effect-creative"
 
 
 
@@ -46,7 +47,7 @@ export const Expertise = () => {
   return (
     <>
       <div className="expertise bg-[#241c18]">
-        <div className="px-[8%] lg:px-[12%] md:py-50 pt-10 pb-10 md:pb-[25%] relative">
+        <div className="px-[8%] lg:px-[12%] md:py-50 pt-10 pb-20 overflow-x-hidden">
 
           <div className="flex flex-col gap-10">
             <TitleWithDot
@@ -90,14 +91,29 @@ export const Expertise = () => {
             ))}
           </div>
 
-          <div className="expertise-slider">
+          {/* Slider con el mismo ancho que el contenido */}
+          <div className="expertise-slider mt-20">
             <Swiper
-              modules={[Autoplay]}
+              modules={[Autoplay, EffectCreative]}
+              effect="creative"
+              creativeEffect={{
+                prev: {
+                  // Slide que sale: se va a la izquierda escalando a 0
+                  translate: ["-100%", 0, 0],
+                  scale: 0,
+                },
+                next: {
+                  // Slide que entra: viene desde la derecha escalando desde 0 a 1
+                  translate: ["100%", 0, 0],
+                  scale: 0,
+                },
+              }}
               spaceBetween={0}
               slidesPerView={1}
               loop={true}
               autoplay={{
                 delay: 2500,
+                disableOnInteraction: false,
               }}
               speed={2000}
             >
@@ -123,4 +139,3 @@ export const Expertise = () => {
     </>
   )
 }
-
