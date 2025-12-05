@@ -8,5 +8,95 @@
     "date": "June 2, 2025",
     "title": "Functional Design Trend That Blend Style and Confort",
     "desc": "Modern interior design is all creating a sleek"
+  },
+  {
+    "id": "2",
+    "image": "/images/blog-2.jpg",
+    "imageDet": "/images/blog-2.jpg",
+    "tag": "Electrical & Lighting",
+    "postby": "Admin",
+    "date": "June 2, 2025",
+    "title": "Innovative Interior Ideas to Refresh Your Living Space",
+    "desc": "Interior design is all about creating a space that is both functional and aesthetically pleasing."
+  },
+  {
+    "id": "3",
+    "image": "/images/blog-3.jpg",
+    "imageDet": "/images/blog-3.jpg",
+    "tag": "Accesories",
+    "postby": "Admin",
+    "date": "June 2, 2025",
+    "title": "Transform Your Home With the Modern Interior Design",
+    "desc": "Unique interior design ideas can make a big difference in the look and feel of a space."
+  },
+  {
+    "id": "4",
+    "image": "/images/blog-4.jpg",
+    "imageDet": "/images/blog-4.jpg",
+    "tag": "Furniture",
+    "postby": "Admin",
+    "date": "June 2, 2025",
+    "title": "Elevate Every Corner With Sleek Interior Concepts",
+    "desc": "Every corner of your home deserves a touch of elegance and sophistication."
+  },
+  {
+    "id": "5",
+    "image": "/images/blog-5.jpg",
+    "imageDet": "/images/blog-5.jpg",
+    "tag": "Home Appliance",
+    "postby": "Admin",
+    "date": "June 2, 2025",
+    "title": "The art of Space: Smart Design for Your Home",
+    "desc": "Designing a space that is both functional and aesthetically pleasing can be a challenge."
+  },
+  {
+    "id": "6",
+    "image": "/images/blog-6.jpg",
+    "imageDet": "/images/blog-6.jpg",
+    "tag": "Interior Design",
+    "postby": "Admin",
+    "date": "June 2, 2025",
+    "title": "Interior Design: Creating a Space That Inspires",
+    "desc": "Inspiring interior design ideas can make a big difference in the look and feel of a space."
+  },
+  {
+    "id": "7",
+    "image": "/images/blog-7.jpg",
+    "imageDet": "/images/blog-7.jpg",
+    "tag": "Creative",
+    "postby": "Admin",
+    "date": "June 2, 2025",
+    "title": "Creative Interior Design Ideas for Your Home",
+    "desc": "Always be creative and innovative in your interior design ideas."
+  },
+  {
+    "id": "8",
+    "image": "/images/blog-8.jpg",
+    "imageDet": "/images/blog-8.jpg",
+    "tag": "Superior",
+    "postby": "Admin",
+    "date": "June 2, 2025",
+    "title": "Impressive Superior Designs",
+    "desc": "Superior designs can make a big difference in the look and feel of a space."
+  },
+  {
+    "id": "9",
+    "image": "/images/blog-9.jpg",
+    "imageDet": "/images/blog-9.jpg",
+    "tag": "Modern",
+    "postby": "Admin",
+    "date": "June 2, 2025",
+    "title": "Modernity in Interior Design",
+    "desc": "Modern Design and creative ideas can make a big difference in the look and feel of a space."
+  },
+  {
+    "id": "10",
+    "image": "/images/blog-10.jpg",
+    "imageDet": "/images/blog-10.jpg",
+    "tag": "Awesome",
+    "postby": "Admin",
+    "date": "June 2, 2025",
+    "title": "Awesome Interior Design Ideas",
+    "desc": "Never mind the Awesome Designs."
   }
 ]
