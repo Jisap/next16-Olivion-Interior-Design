@@ -9,6 +9,7 @@ import { PricingPlans } from "./PricingPlans/page"
 import { Testimonial } from "./Testimonial/page"
 import { Faq } from "./Faq/page"
 import { Banner } from "./Banner/page"
+import { Blogs } from "./Blogs/page"
 
 Image
 
@@ -25,6 +26,7 @@ export const Index = () => {
       <Testimonial />
       <Faq />
       <Banner />
+      <Blogs />
     </>
 
 
