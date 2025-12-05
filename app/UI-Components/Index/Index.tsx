@@ -8,6 +8,7 @@ import { ExpertiseSlider } from "./ExpertiseSlider/page"
 import { PricingPlans } from "./PricingPlans/page"
 import { Testimonial } from "./Testimonial/page"
 import { Faq } from "./Faq/page"
+import { Banner } from "./Banner/page"
 
 Image
 
@@ -23,6 +24,7 @@ export const Index = () => {
       <PricingPlans />
       <Testimonial />
       <Faq />
+      <Banner />
     </>
 
 
