@@ -1,6 +1,7 @@
 "use client"
 
 import { TitleWithDot } from "@/lib/TitleWithDot"
+import Link from "next/link"
 
 export const Banner = () => {
   return (
@@ -18,9 +19,11 @@ export const Banner = () => {
             Let's Start <span className="text-prim">Your New Dream</span> Project
           </h1>
 
-          <button className="rounded-full font-semibold px-10 py-4 GolosText text-white bg-prim hover:bg-white hover:text-prim transition-all duration-300">
-            Get Quote
-          </button>
+          <Link href="/UI-Components/Pages/Contact">
+            <button className="rounded-full font-semibold px-10 py-4 GolosText text-white bg-[#5b6063] text-xl hover:bg-prim transition-all duration-300">
+              Get Quote
+            </button>
+          </Link>
 
         </div>
       </div>
