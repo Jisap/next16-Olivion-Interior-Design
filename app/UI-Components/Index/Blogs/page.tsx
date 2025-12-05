@@ -38,8 +38,25 @@ export const Blogs = () => {
                       width={500}
                       height={500}
                       className='w-full h-full rounded-2xl group-hover:scale-110 transition-all duration-300 object-cover'
-
                     />
+
+                    <span className='absolute top-5 left-5 bg-prim px-4 py-1 font-semibold rounded-full text-white GolosText'>
+                      {blog.tag}
+                    </span>
+                  </div>
+
+                  <div className='blog-info mt-3'>
+                    <p className='GolosText text-gray-400'>
+                      by <span className='text-prim font-semibold'>{blog.postby}</span>
+                    </p>
+
+                    <h2 className='text-4xl md:text-5xl CalSans my-5 hover:text-prim transition-all duration-300'>
+                      {blog.title}
+                    </h2>
+
+                    <p className='GolosText text-gray-500'>
+                      {blog.desc}
+                    </p>
                   </div>
                 </Link>
               </div>
