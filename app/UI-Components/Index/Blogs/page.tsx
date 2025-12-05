@@ -27,6 +27,7 @@ export const Blogs = () => {
 
 
         <div className="flex flex-col lg:flex-row gap-5 mt-20">
+          {/* Vista grande */}
           <div className='w-full lg:w-1/2'>
             {BlogData.slice(0, 1).map((blog, index) => (
               <div key={index} className='group cursor-pointer'>
@@ -57,6 +58,45 @@ export const Blogs = () => {
                     <p className='GolosText text-gray-500'>
                       {blog.desc}
                     </p>
+                  </div>
+                </Link>
+              </div>
+            ))}
+          </div>
+
+          {/* Vista pequeña */}
+          <div className='w-full lg:w-1/2'>
+            {BlogData.slice(1, 4).map((blog, index) => (
+              <div key={index} className='group cursor-pointer'>
+                <Link href={`/UI-Components/Blogs/${blog.id}`}>
+                  <div className='flex flex-col md:flex-row group cursor-pointer mb-5 gap-4'>
+                    <div className='blog-image w-full lg:w-1/2 relative rounded-2xl overflow-hidden'>
+                      <Image
+                        src={blog.image}
+                        alt={blog.title}
+                        width={200}
+                        height={200}
+                        className='w-full h-full rounded-2xl group-hover:scale-110 transition-all duration-300 object-cover'
+                      />
+
+                      <span className='absolute top-3 left-5 bg-prim px-4 py-1 font-semibold rounded-full text-white GolosText'>
+                        {blog.tag}
+                      </span>
+                    </div>
+
+                    <div className='blog-info w-full lg:w-1/2 mt-3'>
+                      <p className='GolosText text-gray-400'>
+                        by <span className='text-prim font-semibold'>{blog.postby}</span>
+                      </p>
+
+                      <h2 className='text-3xl md:text-2xl CalSans my-3 hover:text-prim transition-all duration-300'>
+                        {blog.title}
+                      </h2>
+
+                      <p className='GolosText text-gray-500'>
+                        {blog.desc}
+                      </p>
+                    </div>
                   </div>
                 </Link>
               </div>
