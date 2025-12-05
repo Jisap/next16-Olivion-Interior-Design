@@ -10,6 +10,7 @@ import { Testimonial } from "./Testimonial/page"
 import { Faq } from "./Faq/page"
 import { Banner } from "./Banner/page"
 import { Blogs } from "./Blogs/page"
+import { NewsLetter } from "./Newsletter/page"
 
 Image
 
@@ -27,6 +28,7 @@ export const Index = () => {
       <Faq />
       <Banner />
       <Blogs />
+      <NewsLetter />
     </>
 
 
