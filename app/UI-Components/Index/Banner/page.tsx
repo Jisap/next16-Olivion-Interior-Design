@@ -18,7 +18,9 @@ export const Banner = () => {
             Let's Start <span className="text-prim">Your New Dream</span> Project
           </h1>
 
-
+          <button className="rounded-full font-semibold px-10 py-4 GolosText text-white bg-prim hover:bg-white hover:text-prim transition-all duration-300">
+            Get Quote
+          </button>
 
         </div>
       </div>
