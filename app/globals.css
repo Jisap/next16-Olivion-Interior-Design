@@ -178,6 +178,10 @@ body {
   .hero-content-img {
     top: 45% !important;
   }
+
+  .newsletter:before {
+    display: none;
+  }
 }
 
 @media (max-width: 991px) {
@@ -463,4 +467,35 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+}
+
+.newsletter {
+  z-index: 1;
+}
+
+.newsletter:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../public/images/newsletter-bg.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  z-index: -1;
+}
+
+.newsletter:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../public/images/newsletter-bg.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  transform: rotateY(180deg);
+  z-index: -1;
 }

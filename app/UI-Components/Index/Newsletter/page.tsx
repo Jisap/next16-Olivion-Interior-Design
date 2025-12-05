@@ -29,7 +29,7 @@ export const NewsLetter = () => {
               placeholder='Enter your email'
               className='focus:outline-none w-full py-3'
             />
-            <i className='bi bi-arrow-up-right px-2 py-1 bg-prim rounded-full transition-all duration-300 hover:rotate-45'></i>
+            <i className='bi bi-arrow-up-right px-2 py-1 bg-prim text-white rounded-full transition-all duration-300 hover:rotate-45'></i>
           </div>
 
         </div>
