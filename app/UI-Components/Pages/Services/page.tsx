@@ -8,6 +8,7 @@ import serviceImg4 from "@/public/images/service-4.jpg"
 import serviceImg5 from "@/public/images/service-5.jpg"
 import serviceImg6 from "@/public/images/service-6.jpg"
 import Image from 'next/image'
+import { NewsLetter } from '../../Index/Newsletter/page'
 
 
 const ServicesData = [
@@ -118,6 +119,8 @@ const Services = () => {
           }
         </div>
       </div>
+
+      <NewsLetter />
     </>
   )
 }

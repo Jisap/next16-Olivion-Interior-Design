@@ -562,6 +562,7 @@ body {
   z-index: -1;
 }
 
+/* Gradiente para su posterior animación */
 .service-wrap::before {
   content: "";
   position: absolute;
