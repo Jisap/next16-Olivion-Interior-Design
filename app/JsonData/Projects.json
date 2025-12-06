@@ -1,0 +1,92 @@
+[
+  {
+    "id": "1",
+    "image": "/Project-1.jpg",
+    "tags": [
+      "Residential"
+    ],
+    "title": "Industrial elegance condo",
+    "location": "New York",
+    "date": "14/01/2025"
+  },
+  {
+    "id": "2",
+    "image": "/Project-2.jpg",
+    "tags": [
+      "Residential"
+    ],
+    "title": "Serene Space Studio",
+    "location": "Los Angeles",
+    "date": "05/02/2025"
+  },
+  {
+    "id": "3",
+    "image": "/Project-3.jpg",
+    "tags": [
+      "Commercial"
+    ],
+    "title": "Modern office space",
+    "location": "New York",
+    "date": "13/02/2024"
+  },
+  {
+    "id": "4",
+    "image": "/Project-4.jpg",
+    "tags": [
+      "Hospitality"
+    ],
+    "title": "Luxury Hotel Lobby",
+    "location": "Paris",
+    "date": "20/03/2025"
+  },
+  {
+    "id": "5",
+    "image": "/Project-5.jpg",
+    "tags": [
+      "Residential"
+    ],
+    "title": "Cozy Mountain Cabin",
+    "location": "Aspen",
+    "date": "15/04/2025"
+  },
+  {
+    "id": "6",
+    "image": "/Project-6.jpg",
+    "tags": [
+      "Retail"
+    ],
+    "title": "Chic Boutique Store",
+    "location": "Milan",
+    "date": "25/05/2025"
+  },
+  {
+    "id": "7",
+    "image": "/Project-7.jpg",
+    "tags": [
+      "Residential"
+    ],
+    "title": "Urban Loft Apartment",
+    "location": "Tokyo",
+    "date": "10/06/2025"
+  },
+  {
+    "id": "8",
+    "image": "/Project-8.jpg",
+    "tags": [
+      "Restaurant"
+    ],
+    "title": "Seaside Fine Dining",
+    "location": "Sydney",
+    "date": "22/07/2025"
+  },
+  {
+    "id": "9",
+    "image": "/Project-9.jpg",
+    "tags": [
+      "Corporate"
+    ],
+    "title": "Tech Startup Headquarters",
+    "location": "San Francisco",
+    "date": "30/08/2025"
+  }
+]
