@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import ProjectsData from '@/app/JsonData/Projects.json'
+import { NewsLetter } from '../Index/Newsletter/page'
 
 const Projects = () => {
   return (
@@ -26,7 +27,7 @@ const Projects = () => {
       </div>
 
       {/* Grid de proyectos */}
-      <div className='px-[8%] lg:px-[12%] py-30'>
+      <div className='px-[8%] lg:px-[12%] pt-30 pb-10'>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
           {
             ProjectsData.map((project, index) => (
@@ -72,7 +73,7 @@ const Projects = () => {
 
       </div>
 
-
+      <NewsLetter />
     </>
   )
 }

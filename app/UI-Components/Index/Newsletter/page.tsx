@@ -6,7 +6,7 @@ import { TitleWithDot } from '@/lib/TitleWithDot'
 export const NewsLetter = () => {
   return (
     <>
-      <div className='px-[8%] lg:px-[12%] py-30 newsletter relative'>
+      <div className='px-[8%] lg:px-[12%] pt-20 pb-20 newsletter relative'>
         <div className='flex flex-col  items-center justify-center gap-5'>
           <TitleWithDot
             addTitleClass={false}
