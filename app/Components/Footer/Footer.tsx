@@ -9,7 +9,7 @@ import { ImInstagram } from "react-icons/im"
 export const Footer = () => {
   return (
     <>
-      <div className="px-[8%] lg:px-[12%] py-20 mb-0 footer relative">
+      <div className="px-[8%] lg:px-[12%] py-20 pb-0 footer relative">
         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-5 pb-15">
           <div className="footer-content">
             {/* Logo */}
@@ -109,11 +109,11 @@ export const Footer = () => {
           </div>
 
           <div className="footer-content py-3 flex flex-col">
-            <h2 className="text-3xl text-prim underline CalSans mb-3">
+            <h2 className="text-sm lg:text-xl 3xl:text-2xl text-prim underline CalSans mb-3">
               (509) 222-2222
             </h2>
 
-            <h4 className="text-2xl text-gray-300 underline GolosText mb-3">
+            <h4 className="text-sm lg:text-xl 3xl:text-2xl text-gray-300 underline GolosText mb-3">
               support@olivioninterior.com
             </h4>
 
