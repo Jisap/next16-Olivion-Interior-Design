@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "image": "/Project-1.jpg",
+    "image": "/images/Project-1.jpg",
     "tags": [
       "Residential"
     ],
@@ -11,7 +11,7 @@
   },
   {
     "id": "2",
-    "image": "/Project-2.jpg",
+    "image": "/images/Project-2.jpg",
     "tags": [
       "Residential"
     ],
@@ -21,7 +21,7 @@
   },
   {
     "id": "3",
-    "image": "/Project-3.jpg",
+    "image": "/images/Project-3.jpg",
     "tags": [
       "Commercial"
     ],
@@ -31,7 +31,7 @@
   },
   {
     "id": "4",
-    "image": "/Project-4.jpg",
+    "image": "/images/Project-4.jpg",
     "tags": [
       "Hospitality"
     ],
@@ -41,7 +41,7 @@
   },
   {
     "id": "5",
-    "image": "/Project-5.jpg",
+    "image": "/images/Project-5.jpg",
     "tags": [
       "Residential"
     ],
@@ -51,7 +51,7 @@
   },
   {
     "id": "6",
-    "image": "/Project-6.jpg",
+    "image": "/images/Project-6.jpg",
     "tags": [
       "Retail"
     ],
@@ -61,7 +61,7 @@
   },
   {
     "id": "7",
-    "image": "/Project-7.jpg",
+    "image": "/images/Project-7.jpg",
     "tags": [
       "Residential"
     ],
@@ -71,7 +71,7 @@
   },
   {
     "id": "8",
-    "image": "/Project-8.jpg",
+    "image": "/images/Project-8.jpg",
     "tags": [
       "Restaurant"
     ],
@@ -81,7 +81,7 @@
   },
   {
     "id": "9",
-    "image": "/Project-9.jpg",
+    "image": "/images/Project-9.jpg",
     "tags": [
       "Corporate"
     ],

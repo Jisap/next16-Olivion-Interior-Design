@@ -597,3 +597,21 @@ body {
   transition: left 0.8s ease-in-out;
   */
 }
+
+.project-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: var(--transition-slow);
+  z-index: 1;
+}
+
+/* El hover le da transparencia al overlay y quita la capa de oscurecimiento */
+.project-card:hover .project-image::after {
+  opacity: 0;
+
+}
