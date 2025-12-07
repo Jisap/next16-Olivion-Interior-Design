@@ -15,6 +15,7 @@ import Gallery3 from "@/public/images/gallery-3.jpg"
 import Gallery4 from "@/public/images/gallery-4.jpg"
 import Gallery5 from "@/public/images/gallery-5.jpg"
 import Gallery6 from "@/public/images/gallery-6.jpg"
+import { TitleWithDot } from "@/lib/TitleWithDot";
 
 const Gallery: StaticImageData[] = [
   Gallery1, Gallery2, Gallery3, Gallery4, Gallery5, Gallery6
@@ -256,6 +257,75 @@ const ProjectDetails = () => {
               />
             </SwiperSlide>
           ))}
+        </Swiper>
+      </div>
+
+      {/* Related Projects */}
+      <div className="px-[8%] lg:px-[12%] py-20 about">
+        <div className="flex flex-col lg:flex-row gap-10">
+          <TitleWithDot
+            text="Related Projects"
+            addTitleClass={true}
+          />
+
+          <div className="w-full">
+            <h1 className="CalSans text-4xl md:text-7xl w-full lg:w-[60%]">
+              Explore <span className="text-prim">Our Project</span> Showcase
+            </h1>
+          </div>
+        </div>
+
+        <Swiper
+          slidesPerView={2}
+          spaceBetween={30}
+          loop={true}
+          modules={[Autoplay]}
+          autoplay={{
+            delay: 1500,
+          }}
+          speed={1800}
+          breakpoints={{
+            1200: {
+              slidesPerView: 3,
+            },
+            991: {
+              slidesPerView: 2,
+            },
+            575: {
+              slidesPerView: 1,
+            },
+            0: {
+              slidesPerView: 1,
+            },
+          }}
+          className="mt-30"
+        >
+          {
+            ProjectsData.map((project, index) => (
+              <SwiperSlide key={index}>
+                <div className="project-card group">
+                  <Link href={`/UI-Components/Projects/${project.id}`}>
+                    <div className="project-image relative w-full h-[500px] overflow-hidden rounded-2xl cursor-pointer">
+                      {/* Imagen de fondo de cada tarjeta */}
+                      <div
+                        className='project-img w-full h-full bg-cover group-hover:scale-110 transition-all duration-300 bg-center'
+                        style={{ backgroundImage: `url(${project.image})` }}
+                      ></div>
+
+                      {/* Tags de cada tarjeta */}
+                      <div className='absolute top-5 left-5 flex gap-2 z-50'>
+                        {project.tags.map((tag, idx) => (
+                          <div key={idx} className='bg-white/20 backdrop-blur-sm text-white border border-gray-300 px-4 py-1 rounded-full hover:bg-prim hover:border-transparent transition-all duration-300'>
+                            {tag}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </Link>
+                </div>
+              </SwiperSlide>
+            ))
+          }
         </Swiper>
       </div>
     </>
