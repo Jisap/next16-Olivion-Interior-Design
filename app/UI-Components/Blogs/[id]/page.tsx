@@ -4,6 +4,7 @@ import Link from 'next/link'
 import BlogData from '@/app/JsonData/BlogData.json'
 import { useParams } from 'next/navigation'
 import { useEffect, useState } from 'react'
+import Image from 'next/image'
 
 interface Blog {
   id: string;
@@ -60,15 +61,57 @@ const BlogDetails = () => {
 
           <i className='ri-arrow-right-wide-fill mt-1' />
 
-          <h2 className='GolosText'>
-            Blog
-          </h2>
+          <Link href='/UI-Components/Blogs' className='hover:text-prim transition-all duration-300'>
+            <h2 className='GolosText'>
+              Blog
+            </h2>
+          </Link>
 
           <i className='ri-arrow-right-wide-fill mt-1' />
 
           <h2 className='GolosText'>
-            Blog Details
+            {blog.title}
           </h2>
+        </div>
+      </div>
+
+      <div className='px-[8%] lg:px-[12%] py-20'>
+        <div className='w-full flex flex-col lg:flex-row justify-between gap-8'>
+          {/* Blog - Tag - PostBy - Date & Title */}
+          <div className='w-full lg:w-1/1'>
+            <div>
+              <p className='text-gray-400 GolosText mb-4'>
+                <span className='bg-prim px-4 py-1 rounded-full text-white mr-3'>
+                  {blog.tag}
+                </span>
+
+                by <span className='text-prim font-semibold'>{blog.postby}</span> -{" "} <span>{blog.date}</span>
+              </p>
+
+              <h2 className='text-4xl md:text-6xl CalSans mb-3'>
+                {blog.title}
+              </h2>
+
+              <p className='text-gray-500 GolosText leading-relaxed'>
+                {blog.desc}
+              </p>
+            </div>
+
+            {/* Blog Image */}
+            <div className='rounded-2xl overflow-hidden mt-10'>
+              <Image
+                src={blog.imageDet}
+                alt={blog.title}
+                width={1000}
+                height={600}
+                className='w-full h-auto rounded-2xl'
+              />
+            </div>
+
+            <p className='text-gray-500 GolosText mt-5 leading-relaxed'>
+              {blog.desc}
+            </p>
+          </div>
         </div>
       </div>
     </>
