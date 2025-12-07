@@ -69,7 +69,7 @@ const ProjectDetails = () => {
             </h2>
 
             <h3 className="GolosText text-xl">
-              Themelexus
+              {project.architect}
             </h3>
           </div>
 
@@ -93,7 +93,7 @@ const ProjectDetails = () => {
             </h2>
 
             <h3 className="GolosText text-xl">
-              David Oswald
+              {project.client}
             </h3>
           </div>
 
@@ -103,7 +103,7 @@ const ProjectDetails = () => {
             </h2>
 
             <h3 className="GolosText text-xl">
-              6 Months
+              {project.terms}
             </h3>
           </div>
 
@@ -113,7 +113,7 @@ const ProjectDetails = () => {
             </h2>
 
             <h3 className="GolosText text-xl">
-              Minimalistic
+              {project.strategy}
             </h3>
           </div>
 
@@ -145,7 +145,7 @@ const ProjectDetails = () => {
           </h2>
 
           <p className="GolosText text-gray-500 mt-5">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, neque animi! Laudantium ullam aliquam tempore ut dolorum vitae sint inventore sequi id aliquid. Tempora repellendus magnam, quaerat minus molestiae quos.
+            {project.designDetails}
           </p>
         </div>
       </div>

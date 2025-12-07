@@ -7,7 +7,12 @@
     ],
     "title": "Industrial elegance condo",
     "location": "New York",
-    "date": "14/01/2025"
+    "date": "14/01/2025",
+    "architect": "Arch-Innovate",
+    "client": "Johnathan Deo",
+    "terms": "8 Months",
+    "strategy": "Industrial",
+    "designDetails": "Este proyecto se centró en fusionar la elegancia industrial con el confort moderno. Utilizamos materiales crudos como el hormigón y el metal, equilibrados con maderas cálidas y textiles suaves para crear un espacio sofisticado y acogedor."
   },
   {
     "id": "2",
@@ -17,7 +22,12 @@
     ],
     "title": "Serene Space Studio",
     "location": "Los Angeles",
-    "date": "05/02/2025"
+    "date": "05/02/2025",
+    "architect": "Creative Builds",
+    "client": "Elena Rodriguez",
+    "terms": "5 Months",
+    "strategy": "Minimalist",
+    "designDetails": "El objetivo era crear un estudio tranquilo y funcional. Se priorizó la luz natural y una paleta de colores neutros para maximizar la sensación de espacio y calma, ideal para la creatividad y la concentración."
   },
   {
     "id": "3",
@@ -27,7 +37,12 @@
     ],
     "title": "Modern office space",
     "location": "New York",
-    "date": "13/02/2024"
+    "date": "13/02/2024",
+    "architect": "Urban Designs",
+    "client": "Tech Solutions Inc.",
+    "terms": "12 Months",
+    "strategy": "Collaborative",
+    "designDetails": "Diseñamos un espacio de oficina moderno y abierto para fomentar la colaboración. Las áreas de trabajo flexibles, las salas de reuniones tecnológicamente equipadas y las zonas de descanso promueven un ambiente de trabajo dinámico y productivo."
   },
   {
     "id": "4",
@@ -37,7 +52,12 @@
     ],
     "title": "Luxury Hotel Lobby",
     "location": "Paris",
-    "date": "20/03/2025"
+    "date": "20/03/2025",
+    "architect": "Elegance Group",
+    "client": "Le Grand Hotel",
+    "terms": "10 Months",
+    "strategy": "Luxurious",
+    "designDetails": "El rediseño del vestíbulo de este hotel de lujo buscaba impresionar desde el primer momento. Se utilizaron mármoles exóticos, detalles en oro y una iluminación espectacular para crear una atmósfera de opulencia y exclusividad."
   },
   {
     "id": "5",
@@ -47,7 +67,12 @@
     ],
     "title": "Cozy Mountain Cabin",
     "location": "Aspen",
-    "date": "15/04/2025"
+    "date": "15/04/2025",
+    "architect": "Nature Homes",
+    "client": "The Miller Family",
+    "terms": "7 Months",
+    "strategy": "Rustic",
+    "designDetails": "Esta cabaña de montaña fue diseñada para ser un refugio acogedor. La madera natural, una gran chimenea de piedra y ventanales con vistas a las montañas crean el ambiente perfecto para el descanso y la conexión con la naturaleza."
   },
   {
     "id": "6",
@@ -57,7 +82,12 @@
     ],
     "title": "Chic Boutique Store",
     "location": "Milan",
-    "date": "25/05/2025"
+    "date": "25/05/2025",
+    "architect": "Moda Interiors",
+    "client": "Valentina Rossi",
+    "terms": "4 Months",
+    "strategy": "Chic",
+    "designDetails": "El diseño de esta boutique de moda en Milán se centra en la elegancia y la simplicidad. Los expositores minimalistas, una iluminación cuidada y un diseño de flujo intuitivo hacen que la experiencia de compra sea única y agradable."
   },
   {
     "id": "7",
@@ -67,7 +97,12 @@
     ],
     "title": "Urban Loft Apartment",
     "location": "Tokyo",
-    "date": "10/06/2025"
+    "date": "10/06/2025",
+    "architect": "Tokyo Modern",
+    "client": "Kenji Tanaka",
+    "terms": "6 Months",
+    "strategy": "Urban",
+    "designDetails": "Un loft urbano que aprovecha al máximo el espacio vertical. Con soluciones de almacenamiento inteligentes, muebles multifuncionales y un estilo industrial-moderno, este apartamento es un ejemplo de vida urbana eficiente y con estilo."
   },
   {
     "id": "8",
@@ -77,7 +112,12 @@
     ],
     "title": "Seaside Fine Dining",
     "location": "Sydney",
-    "date": "22/07/2025"
+    "date": "22/07/2025",
+    "architect": "Oceanic Designs",
+    "client": "The Cove Restaurant",
+    "terms": "9 Months",
+    "strategy": "Coastal",
+    "designDetails": "Este restaurante de alta cocina junto al mar ofrece una experiencia inmersiva. Grandes ventanales, una paleta de colores inspirada en el océano y materiales naturales crean un ambiente relajado y elegante para disfrutar de la gastronomía."
   },
   {
     "id": "9",
@@ -87,6 +127,11 @@
     ],
     "title": "Tech Startup Headquarters",
     "location": "San Francisco",
-    "date": "30/08/2025"
+    "date": "30/08/2025",
+    "architect": "Future Spaces",
+    "client": "Innovate Corp",
+    "terms": "15 Months",
+    "strategy": "Innovative",
+    "designDetails": "La sede de esta startup tecnológica fue diseñada para inspirar innovación. Espacios de trabajo abiertos, pizarras por todas partes, zonas de juego y tecnología de vanguardia crean un entorno que fomenta la creatividad y el trabajo en equipo."
   }
 ]
