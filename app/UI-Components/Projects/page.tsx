@@ -35,11 +35,13 @@ const Projects = () => {
                 <div className='project-card group'>
                   <Link href={`/UI-Components/Projects/${project.id}`}>
                     <div className='project-image relative w-full h-[550px] overflow-hidden rounded-2xl cursor-pointer'>
+                      {/* Imagen de fondo de cada tarjeta */}
                       <div
                         className='project-img w-full h-full bg-cover group-hover:scale-110 transition-all duration-300 bg-center'
                         style={{ backgroundImage: `url(${project.image})` }}
                       ></div>
 
+                      {/* Tags de cada tarjeta */}
                       <div className='absolute top-5 left-5 flex gap-2 z-50'>
                         {project.tags.map((tag, idx) => (
                           <div key={idx} className='bg-white/20 backdrop-blur-sm text-white border border-gray-300 px-4 py-1 rounded-full hover:bg-prim hover:border-transparent transition-all duration-300'>
@@ -50,6 +52,7 @@ const Projects = () => {
                     </div>
                   </Link>
 
+                  {/* Información de la tarjeta */}
                   <div className='project-info my-5'>
                     <Link href={`/UI-Components/Projects/${project.id}`}>
                       <h2 className='GolosText font-semibold text-4xl hover:tex-prim transition-all duration-300'>

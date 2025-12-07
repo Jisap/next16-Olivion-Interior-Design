@@ -322,6 +322,22 @@ const ProjectDetails = () => {
                       </div>
                     </div>
                   </Link>
+
+                  <div className='project-info my-5'>
+                    <Link href={`/UI-Components/Projects/${project.id}`}>
+                      <h2 className='GolosText font-semibold text-4xl hover:tex-prim transition-all duration-300'>
+                        {project.title}
+                      </h2>
+                    </Link>
+
+                    <h5 className='GolosText text-2xl mt-2'>
+                      {project.location}
+                    </h5>
+
+                    <p className='GolosText text-md text-gray-700 mt-2'>
+                      {project.date}
+                    </p>
+                  </div>
                 </div>
               </SwiperSlide>
             ))
