@@ -5,6 +5,8 @@ import ProjectsData from '@/app/JsonData/Projects.json';
 import { useParams } from "next/navigation";
 import Image from "next/image";
 
+
+
 const ProjectDetails = () => {
 
   const { id } = useParams();
@@ -147,6 +149,19 @@ const ProjectDetails = () => {
           <p className="GolosText text-gray-500 mt-5">
             {project.designDetails}
           </p>
+
+          <div className="mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-2 md:gap-5">
+            {project.designDetailsList?.map((info) => (
+              <div key={info.id} className="flex gap-2">
+                <i className="bi bi-check-circle-fill text-prim"></i>
+                <p className="GolosText text-gray-500">
+                  <span className="font-bold text-black">{info.title}</span> {info.pere}
+                </p>
+
+
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </>

@@ -12,7 +12,34 @@
     "client": "Johnathan Deo",
     "terms": "8 Months",
     "strategy": "Industrial",
-    "designDetails": "Este proyecto se centró en fusionar la elegancia industrial con el confort moderno. Utilizamos materiales crudos como el hormigón y el metal, equilibrados con maderas cálidas y textiles suaves para crear un espacio sofisticado y acogedor."
+    "designDetails": "Este proyecto se centró en fusionar la elegancia industrial con el confort moderno. Utilizamos materiales crudos como el hormigón y el metal, equilibrados con maderas cálidas y textiles suaves para crear un espacio sofisticado y acogedor.",
+    "designDetailsList": [
+      {
+        "id": 1,
+        "title": "Materiales crudos",
+        "pere": "Uso destacado de hormigón, acero y hierro para reforzar la estética industrial."
+      },
+      {
+        "id": 2,
+        "title": "Texturas cálidas",
+        "pere": "Combinación de maderas naturales y textiles suaves para equilibrar el ambiente."
+      },
+      {
+        "id": 3,
+        "title": "Iluminación funcional",
+        "pere": "Instalación de luminarias metálicas y sistemas de iluminación expuestos."
+      },
+      {
+        "id": 4,
+        "title": "Espacios abiertos",
+        "pere": "Distribución diáfana que potencia la sensación de amplitud y continuidad."
+      },
+      {
+        "id": 5,
+        "title": "Detalles metálicos",
+        "pere": "Puertas, marcos y mobiliario con acabados negros y oxidados para mayor carácter."
+      }
+    ]
   },
   {
     "id": "2",
@@ -27,7 +54,34 @@
     "client": "Elena Rodriguez",
     "terms": "5 Months",
     "strategy": "Minimalist",
-    "designDetails": "El objetivo era crear un estudio tranquilo y funcional. Se priorizó la luz natural y una paleta de colores neutros para maximizar la sensación de espacio y calma, ideal para la creatividad y la concentración."
+    "designDetails": "El objetivo era crear un estudio tranquilo y funcional. Se priorizó la luz natural y una paleta de colores neutros para maximizar la sensación de espacio y calma, ideal para la creatividad y la concentración.",
+    "designDetailsList": [
+      {
+        "id": 1,
+        "title": "Paleta neutra",
+        "pere": "Uso de blancos, beige y tonos tierra para promover serenidad visual."
+      },
+      {
+        "id": 2,
+        "title": "Luz natural",
+        "pere": "Grandes ventanales para maximizar la entrada de luz a lo largo del día."
+      },
+      {
+        "id": 3,
+        "title": "Mobiliario funcional",
+        "pere": "Piezas versátiles y ligeras para optimizar el espacio reducido del estudio."
+      },
+      {
+        "id": 4,
+        "title": "Decoración mínima",
+        "pere": "Elementos decorativos esenciales que mantienen el ambiente despejado y ordenado."
+      },
+      {
+        "id": 5,
+        "title": "Almacenaje oculto",
+        "pere": "Sistemas integrados que evitan el desorden visual y multiplican la funcionalidad."
+      }
+    ]
   },
   {
     "id": "3",
@@ -42,7 +96,34 @@
     "client": "Tech Solutions Inc.",
     "terms": "12 Months",
     "strategy": "Collaborative",
-    "designDetails": "Diseñamos un espacio de oficina moderno y abierto para fomentar la colaboración. Las áreas de trabajo flexibles, las salas de reuniones tecnológicamente equipadas y las zonas de descanso promueven un ambiente de trabajo dinámico y productivo."
+    "designDetails": "Diseñamos un espacio de oficina moderno y abierto para fomentar la colaboración. Las áreas de trabajo flexibles, las salas de reuniones tecnológicamente equipadas y las zonas de descanso promueven un ambiente de trabajo dinámico y productivo.",
+    "designDetailsList": [
+      {
+        "id": 1,
+        "title": "Espacios abiertos",
+        "pere": "Zonas sin divisiones para facilitar la interacción entre equipos."
+      },
+      {
+        "id": 2,
+        "title": "Tecnología integrada",
+        "pere": "Salas equipadas con pantallas táctiles y sistemas de videoconferencia avanzados."
+      },
+      {
+        "id": 3,
+        "title": "Áreas flexibles",
+        "pere": "Puestos de trabajo móviles y escritorios ajustables para distintos estilos laborales."
+      },
+      {
+        "id": 4,
+        "title": "Zonas de descanso",
+        "pere": "Espacios relajados para fomentar la creatividad y el bienestar."
+      },
+      {
+        "id": 5,
+        "title": "Acústica optimizada",
+        "pere": "Paneles y materiales absorbentes que reducen el ruido en áreas de colaboración."
+      }
+    ]
   },
   {
     "id": "4",
@@ -57,7 +138,34 @@
     "client": "Le Grand Hotel",
     "terms": "10 Months",
     "strategy": "Luxurious",
-    "designDetails": "El rediseño del vestíbulo de este hotel de lujo buscaba impresionar desde el primer momento. Se utilizaron mármoles exóticos, detalles en oro y una iluminación espectacular para crear una atmósfera de opulencia y exclusividad."
+    "designDetails": "El rediseño del vestíbulo de este hotel de lujo buscaba impresionar desde el primer momento. Se utilizaron mármoles exóticos, detalles en oro y una iluminación espectacular para crear una atmósfera de opulencia y exclusividad.",
+    "designDetailsList": [
+      {
+        "id": 1,
+        "title": "Mármol premium",
+        "pere": "Superficies elegantes con vetas naturales que aportan distinción."
+      },
+      {
+        "id": 2,
+        "title": "Detalles dorados",
+        "pere": "Acabados metálicos en oro para reforzar la sensación de lujo."
+      },
+      {
+        "id": 3,
+        "title": "Iluminación escénica",
+        "pere": "Lámparas colgantes y luces indirectas para un ambiente sofisticado."
+      },
+      {
+        "id": 4,
+        "title": "Recepción destacada",
+        "pere": "Mostrador escultórico que sirve como pieza central del espacio."
+      },
+      {
+        "id": 5,
+        "title": "Mobiliario elegante",
+        "pere": "Sillones y mesas de diseño exclusivo con materiales nobles."
+      }
+    ]
   },
   {
     "id": "5",
@@ -72,7 +180,34 @@
     "client": "The Miller Family",
     "terms": "7 Months",
     "strategy": "Rustic",
-    "designDetails": "Esta cabaña de montaña fue diseñada para ser un refugio acogedor. La madera natural, una gran chimenea de piedra y ventanales con vistas a las montañas crean el ambiente perfecto para el descanso y la conexión con la naturaleza."
+    "designDetails": "Esta cabaña de montaña fue diseñada para ser un refugio acogedor. La madera natural, una gran chimenea de piedra y ventanales con vistas a las montañas crean el ambiente perfecto para el descanso y la conexión con la naturaleza.",
+    "designDetailsList": [
+      {
+        "id": 1,
+        "title": "Maderas naturales",
+        "pere": "Revestimientos y vigas vistas que aportan calidez rústica."
+      },
+      {
+        "id": 2,
+        "title": "Chimenea central",
+        "pere": "Gran chimenea de piedra que se convierte en el corazón de la vivienda."
+      },
+      {
+        "id": 3,
+        "title": "Ventanales panorámicos",
+        "pere": "Amplias vistas hacia el paisaje montañoso y entrada de luz natural."
+      },
+      {
+        "id": 4,
+        "title": "Textiles acogedores",
+        "pere": "Uso de mantas, alfombras gruesas y fibras naturales para confort absoluto."
+      },
+      {
+        "id": 5,
+        "title": "Mobiliario artesanal",
+        "pere": "Piezas de carpintería hechas a medida con maderas locales."
+      }
+    ]
   },
   {
     "id": "6",
@@ -87,7 +222,34 @@
     "client": "Valentina Rossi",
     "terms": "4 Months",
     "strategy": "Chic",
-    "designDetails": "El diseño de esta boutique de moda en Milán se centra en la elegancia y la simplicidad. Los expositores minimalistas, una iluminación cuidada y un diseño de flujo intuitivo hacen que la experiencia de compra sea única y agradable."
+    "designDetails": "El diseño de esta boutique de moda en Milán se centra en la elegancia y la simplicidad. Los expositores minimalistas, una iluminación cuidada y un diseño de flujo intuitivo hacen que la experiencia de compra sea única y agradable.",
+    "designDetailsList": [
+      {
+        "id": 1,
+        "title": "Expositores minimalistas",
+        "pere": "Estructuras limpias que enfocan la atención en las prendas."
+      },
+      {
+        "id": 2,
+        "title": "Iluminación cálida",
+        "pere": "Luminarias estratégicas que destacan texturas y colores."
+      },
+      {
+        "id": 3,
+        "title": "Flujo intuitivo",
+        "pere": "Distribución que guía al cliente a través de las colecciones."
+      },
+      {
+        "id": 4,
+        "title": "Tonos neutros",
+        "pere": "Paleta suave que crea un ambiente elegante y relajado."
+      },
+      {
+        "id": 5,
+        "title": "Detalles refinados",
+        "pere": "Acabados en metal y mármol que aportan sofisticación."
+      }
+    ]
   },
   {
     "id": "7",
@@ -102,7 +264,34 @@
     "client": "Kenji Tanaka",
     "terms": "6 Months",
     "strategy": "Urban",
-    "designDetails": "Un loft urbano que aprovecha al máximo el espacio vertical. Con soluciones de almacenamiento inteligentes, muebles multifuncionales y un estilo industrial-moderno, este apartamento es un ejemplo de vida urbana eficiente y con estilo."
+    "designDetails": "Un loft urbano que aprovecha al máximo el espacio vertical. Con soluciones de almacenamiento inteligentes, muebles multifuncionales y un estilo industrial-moderno, este apartamento es un ejemplo de vida urbana eficiente y con estilo.",
+    "designDetailsList": [
+      {
+        "id": 1,
+        "title": "Espacios verticales",
+        "pere": "Diseño que aprovecha la altura para ganar funcionalidad."
+      },
+      {
+        "id": 2,
+        "title": "Muebles multifuncionales",
+        "pere": "Piezas que combinan almacenamiento y practicidad sin perder estética."
+      },
+      {
+        "id": 3,
+        "title": "Estilo industrial-moderno",
+        "pere": "Uso de metales, maderas oscuras y elementos expuestos."
+      },
+      {
+        "id": 4,
+        "title": "Almacenaje inteligente",
+        "pere": "Soluciones ocultas que optimizan cada rincón disponible."
+      },
+      {
+        "id": 5,
+        "title": "Ambiente urbano",
+        "pere": "Decoración inspirada en la vida cosmopolita de Tokio."
+      }
+    ]
   },
   {
     "id": "8",
@@ -117,7 +306,34 @@
     "client": "The Cove Restaurant",
     "terms": "9 Months",
     "strategy": "Coastal",
-    "designDetails": "Este restaurante de alta cocina junto al mar ofrece una experiencia inmersiva. Grandes ventanales, una paleta de colores inspirada en el océano y materiales naturales crean un ambiente relajado y elegante para disfrutar de la gastronomía."
+    "designDetails": "Este restaurante de alta cocina junto al mar ofrece una experiencia inmersiva. Grandes ventanales, una paleta de colores inspirada en el océano y materiales naturales crean un ambiente relajado y elegante para disfrutar de la gastronomía.",
+    "designDetailsList": [
+      {
+        "id": 1,
+        "title": "Vistas al océano",
+        "pere": "Ventanales que integran el paisaje marino en la experiencia culinaria."
+      },
+      {
+        "id": 2,
+        "title": "Paleta oceánica",
+        "pere": "Azules suaves, blancos arenosos y tonos agua para un ambiente costero."
+      },
+      {
+        "id": 3,
+        "title": "Materiales naturales",
+        "pere": "Madera clara y piedra que aportan calidez y naturalidad."
+      },
+      {
+        "id": 4,
+        "title": "Iluminación ambiental",
+        "pere": "Luz cálida y tenue que acompaña el paisaje marítimo."
+      },
+      {
+        "id": 5,
+        "title": "Flujo espacioso",
+        "pere": "Distribución abierta que permite amplitud y comodidad."
+      }
+    ]
   },
   {
     "id": "9",
@@ -132,6 +348,33 @@
     "client": "Innovate Corp",
     "terms": "15 Months",
     "strategy": "Innovative",
-    "designDetails": "La sede de esta startup tecnológica fue diseñada para inspirar innovación. Espacios de trabajo abiertos, pizarras por todas partes, zonas de juego y tecnología de vanguardia crean un entorno que fomenta la creatividad y el trabajo en equipo."
+    "designDetails": "La sede de esta startup tecnológica fue diseñada para inspirar innovación. Espacios de trabajo abiertos, pizarras por todas partes, zonas de juego y tecnología de vanguardia crean un entorno que fomenta la creatividad y el trabajo en equipo.",
+    "designDetailsList": [
+      {
+        "id": 1,
+        "title": "Espacios creativos",
+        "pere": "Áreas con pizarras y zonas ideadas para sesiones de brainstorming."
+      },
+      {
+        "id": 2,
+        "title": "Tecnología avanzada",
+        "pere": "Equipamiento de última generación disponible en todo el edificio."
+      },
+      {
+        "id": 3,
+        "title": "Zonas recreativas",
+        "pere": "Espacios de descanso con juegos y actividades relajantes."
+      },
+      {
+        "id": 4,
+        "title": "Puestos ergonomicos",
+        "pere": "Mobiliario ergonómico que mejora la productividad y el bienestar."
+      },
+      {
+        "id": 5,
+        "title": "Ambiente innovador",
+        "pere": "Diseño que promueve creatividad, colaboración y dinamismo."
+      }
+    ]
   }
 ]
