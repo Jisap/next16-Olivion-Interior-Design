@@ -76,6 +76,18 @@ const About = () => {
                 className='object-cover rounded-2xl h-full w-full'
               />
             </div>
+
+            <div className='about-pere pt-10'>
+              <p className='GolosText text-sm text-gray-500'>
+                We believe thar every space has the power to inspire, and thar great design brings that inspiration to life. Our mission is to craft environments that stir creativity, evoke emotion, and reflect the essence of those whor inhabit them
+              </p>
+
+              <button className='mt-9 border border-gray-500/50 font-semibold px-5 py-3 rounded-full hover:bg-prim hover:text-white hover:border-transparent transition-all duration-300'>
+                <Link href="/">
+                  Learn More <i className='bi bi-arrow-right ps-1'></i>
+                </Link>
+              </button>
+            </div>
           </div>
         </div>
       </div>
