@@ -5,6 +5,7 @@ import BlogData from '@/app/JsonData/BlogData.json'
 import { useParams } from 'next/navigation'
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
+import quote from '@/public/images/quote.png'
 
 interface Blog {
   id: string;
@@ -15,6 +16,14 @@ interface Blog {
   date: string;
   title: string;
   desc: string;
+  title2: string;
+  desc2: string;
+  title3: string;
+  desc3: string;
+  title4: string;
+  desc4: string;
+  gallery: string[];
+  quote: string;
 }
 
 const BlogDetails = () => {
@@ -97,7 +106,7 @@ const BlogDetails = () => {
               </p>
             </div>
 
-            {/* Blog Image */}
+            {/* Blog Image & Content */}
             <div className='rounded-2xl overflow-hidden mt-10'>
               <Image
                 src={blog.imageDet}
@@ -108,9 +117,60 @@ const BlogDetails = () => {
               />
             </div>
 
+            <h2 className='text-4xl md:text-4xl CalSans my-5'>
+              {blog.title2}
+            </h2>
+
             <p className='text-gray-500 GolosText mt-5 leading-relaxed'>
-              {blog.desc}
+              {blog.desc2}
             </p>
+
+            <h2 className='text-4xl md:text-4xl CalSans my-5'>
+              {blog.title3}
+            </h2>
+            <p className='text-gray-500 GolosText mt-5 leading-relaxed'>
+              {blog.desc3}
+            </p>
+
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-5 mt-10'>
+              {blog.gallery.map((item, index) => (
+                <Image
+                  key={index}
+                  src={item}
+                  alt={blog.title}
+                  width={1000}
+                  height={600}
+                  className='w-full h-auto rounded-2xl'
+                />
+              ))}
+            </div>
+
+            <h2 className='text-4xl md:text-4xl CalSans my-5'>
+              {blog.title4}
+            </h2>
+
+            <p className='text-gray-500 GolosText mt-5 leading-relaxed'>
+              {blog.desc4}
+            </p>
+
+            <div className='my-5'>
+              <div className='bg-[#efebe8] rounded-2xl flex flex-col justify-center items-center text-center px-10 py-10'>
+                <Image
+                  src={quote}
+                  alt='quote'
+                  className='rounded-2xl'
+                />
+
+                <p className='GolosText text-2xl mb-3'>
+                  {blog.quote}
+                </p>
+
+                <h4 className='GolosText font-bold'>
+                  {blog.postby}
+                </h4>
+
+              </div>
+            </div>
           </div>
         </div>
       </div>
