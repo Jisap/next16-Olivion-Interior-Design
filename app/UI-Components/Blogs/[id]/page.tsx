@@ -93,7 +93,7 @@ const BlogDetails = () => {
             <div>
               <p className='text-gray-400 GolosText mb-4'>
                 <span className='bg-prim px-4 py-1 rounded-full text-white mr-3'>
-                  {blog.tag}
+                  {blog.tag[0]}
                 </span>
 
                 by <span className='text-prim font-semibold'>{blog.postby}</span> -{" "} <span>{blog.date}</span>
@@ -194,6 +194,43 @@ const BlogDetails = () => {
                     {item}
                   </h2>
                 ))}
+              </div>
+
+              <div>
+                <h2 className='text-4xl md:text-4xl CalSans mt-10 mb-5'>
+                  Recent Posts
+                </h2>
+
+                <div className='flex flex-col gap-2'>
+                  {BlogData.slice(0, 4).map((blog, index) => (
+                    <Link href={`/UI-Components/Blogs/${blog.id}`} key={index}>
+                      <div className='flex flex-row gap-3'>
+                        <Image
+                          src={blog.image}
+                          alt={blog.title}
+                          width={150}
+                          height={150}
+                          className='rounded-2xl'
+                        />
+
+                        <div className='flex flex-col min-w-0'>
+                          <p className='GolosText'>
+                            {blog.date}
+                          </p>
+
+                          <h2 className='GolosText text-xl md:text-3xl lg:text-xl hover:text-prim cursor-pointer transition-all duration-300 font-semibold truncate'>
+                            {blog.title}
+                          </h2>
+
+                          <p className='GolosText text-gray-500'>
+                            By {blog.postby}
+                          </p>
+                        </div>
+
+                      </div>
+                    </Link>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
