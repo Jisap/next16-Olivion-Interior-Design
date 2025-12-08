@@ -42,7 +42,7 @@ export const Blogs = () => {
                     />
 
                     <span className='absolute top-5 left-5 bg-prim px-4 py-1 font-semibold rounded-full text-white GolosText'>
-                      {blog.tag}
+                      {blog.tag[0]}
                     </span>
                   </div>
 
@@ -80,7 +80,7 @@ export const Blogs = () => {
                       />
 
                       <span className='absolute top-3 left-5 bg-prim px-4 py-1 font-semibold rounded-full text-white GolosText'>
-                        {blog.tag}
+                        {blog.tag[0]}
                       </span>
                     </div>
 

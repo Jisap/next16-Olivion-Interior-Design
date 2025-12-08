@@ -5,11 +5,12 @@ interface TitleWithDotProps {
   textColor?: string;
   addTitleClass?: boolean;
   isCentered?: boolean;
+  size?: "sm" | "lg";
 }
 
-export const TitleWithDot = ({ text, textColor = "", addTitleClass = true, isCentered = false }: TitleWithDotProps) => {
+export const TitleWithDot = ({ text, textColor = "", addTitleClass = true, isCentered = false, size = "sm" }: TitleWithDotProps) => {
   // Construye las clases dinámicamente para el div principal
-  const containerClasses = `w-full pt-8 ${addTitleClass ? 'title' : ''} ${isCentered ? 'flex justify-center' : ''}`;
+  const containerClasses = `w-full pt-8 ${addTitleClass ? 'title' : ''} ${isCentered ? 'flex justify-center' : ''} ${size === 'sm' ? 'lg:w-1/3' : ''}`;
 
   return (
     <div className={containerClasses.trim()}>
