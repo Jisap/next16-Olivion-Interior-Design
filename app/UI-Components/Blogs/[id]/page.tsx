@@ -22,6 +22,8 @@ interface Blog {
   desc3: string;
   title4: string;
   desc4: string;
+  title5: string;
+  desc5: string;
   gallery: string[];
   quote: string;
 }
@@ -168,9 +170,16 @@ const BlogDetails = () => {
                 <h4 className='GolosText font-bold'>
                   {blog.postby}
                 </h4>
-
               </div>
             </div>
+
+            <h2 className='text-4xl md:text-4xl CalSans my-5'>
+              {blog.title5}
+            </h2>
+
+            <p className='text-gray-500 GolosText mt-5 leading-relaxed'>
+              {blog.desc5}
+            </p>
           </div>
         </div>
       </div>
