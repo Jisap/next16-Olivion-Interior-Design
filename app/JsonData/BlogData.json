@@ -3,7 +3,12 @@
     "id": "1",
     "image": "/images/blog-1.jpg",
     "imageDet": "/images/blog-1.jpg",
-    "tag": "Power Tool",
+    "tag": [
+      "Modern Design",
+      "Functional Spaces",
+      "Minimalism",
+      "Interior Trends"
+    ],
     "postby": "Admin",
     "date": "June 2, 2025",
     "title": "Functional Design Trend That Blend Style and Comfort",
@@ -26,7 +31,12 @@
     "id": "2",
     "image": "/images/blog-2.jpg",
     "imageDet": "/images/blog-2.jpg",
-    "tag": "Electrical & Lighting",
+    "tag": [
+      "Lighting Design",
+      "Ambient Lighting",
+      "Smart Lighting",
+      "Interior Illumination"
+    ],
     "postby": "Admin",
     "date": "June 2, 2025",
     "title": "Innovative Interior Ideas to Refresh Your Living Space",
@@ -49,7 +59,12 @@
     "id": "3",
     "image": "/images/blog-3.jpg",
     "imageDet": "/images/blog-3.jpg",
-    "tag": "Accesories",
+    "tag": [
+      "Home Accessories",
+      "Decor Styling",
+      "Minimalist Decor",
+      "Curated Interiors"
+    ],
     "postby": "Admin",
     "date": "June 2, 2025",
     "title": "Transform Your Home With the Modern Interior Design",
@@ -72,7 +87,12 @@
     "id": "4",
     "image": "/images/blog-4.jpg",
     "imageDet": "/images/blog-4.jpg",
-    "tag": "Furniture",
+    "tag": [
+      "Modern Furniture",
+      "Ergonomic Design",
+      "Space Optimization",
+      "Sleek Interiors"
+    ],
     "postby": "Admin",
     "date": "June 2, 2025",
     "title": "Elevate Every Corner With Sleek Interior Concepts",
@@ -95,7 +115,12 @@
     "id": "5",
     "image": "/images/blog-5.jpg",
     "imageDet": "/images/blog-5.jpg",
-    "tag": "Home Appliance",
+    "tag": [
+      "Smart Home",
+      "Integrated Appliances",
+      "Kitchen Design",
+      "Tech & Interior"
+    ],
     "postby": "Admin",
     "date": "June 2, 2025",
     "title": "The art of Space: Smart Design for Your Home",
@@ -118,7 +143,12 @@
     "id": "6",
     "image": "/images/blog-6.jpg",
     "imageDet": "/images/blog-6.jpg",
-    "tag": "Interior Design",
+    "tag": [
+      "Inspiring Spaces",
+      "Wellness Design",
+      "Mindful Interiors",
+      "Emotional Design"
+    ],
     "postby": "Admin",
     "date": "June 2, 2025",
     "title": "Interior Design: Creating a Space That Inspires",
@@ -141,7 +171,12 @@
     "id": "7",
     "image": "/images/blog-7.jpg",
     "imageDet": "/images/blog-7.jpg",
-    "tag": "Creative",
+    "tag": [
+      "Creative Design",
+      "Bold Interiors",
+      "Artistic Spaces",
+      "Expressive Decor"
+    ],
     "postby": "Admin",
     "date": "June 2, 2025",
     "title": "Creative Interior Design Ideas for Your Home",
@@ -164,7 +199,12 @@
     "id": "8",
     "image": "/images/blog-8.jpg",
     "imageDet": "/images/blog-8.jpg",
-    "tag": "Superior",
+    "tag": [
+      "Luxury Design",
+      "Premium Finishes",
+      "High-End Interiors",
+      "Craftsmanship"
+    ],
     "postby": "Admin",
     "date": "June 2, 2025",
     "title": "Impressive Superior Designs",
@@ -187,7 +227,12 @@
     "id": "9",
     "image": "/images/blog-9.jpg",
     "imageDet": "/images/blog-9.jpg",
-    "tag": "Modern",
+    "tag": [
+      "Modern Aesthetics",
+      "Contemporary Living",
+      "Architectural Design",
+      "Minimalist Spaces"
+    ],
     "postby": "Admin",
     "date": "June 2, 2025",
     "title": "Modernity in Interior Design",
@@ -210,7 +255,12 @@
     "id": "10",
     "image": "/images/blog-10.jpg",
     "imageDet": "/images/blog-10.jpg",
-    "tag": "Awesome",
+    "tag": [
+      "Bold Design",
+      "Statement Interiors",
+      "Dynamic Spaces",
+      "Visual Impact"
+    ],
     "postby": "Admin",
     "date": "June 2, 2025",
     "title": "Awesome Interior Design Ideas",

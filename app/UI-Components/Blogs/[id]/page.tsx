@@ -11,7 +11,7 @@ interface Blog {
   id: string;
   image: string;
   imageDet: string;
-  tag: string;
+  tag: string[];
   postby: string;
   date: string;
   title: string;
@@ -180,6 +180,22 @@ const BlogDetails = () => {
             <p className='text-gray-500 GolosText mt-5 leading-relaxed'>
               {blog.desc5}
             </p>
+          </div>
+
+          <div className='w-full lg:w-1/2 sticky top-22 left-0 h-full'>
+            <div>
+              <h2 className='text-4xl md:text-4xl CalSans my-5'>
+                Related Categories
+              </h2>
+
+              <div className='flex flex-col gap-2'>
+                {blog.tag.map((item, index) => (
+                  <h2 key={index} className='GolosText text-lg hover:text-prim cursor-pointer transition-all duration-300 font-semibold border-b border-gray-300 pb-1'>
+                    {item}
+                  </h2>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>
