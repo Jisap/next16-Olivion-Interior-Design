@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "image": "/team-1.jpg",
+    "name": "Olivia Peterson",
+    "role": "Interior Designer",
+    "exp": "5 years",
+    "number": "+1 234 567 890",
+    "desc": "Olivia Peterson was elected to judge the 3-rd edition of Dezeen Awards. Having many years of expertise in the desing of residential and public spaces - the founder and chief architect of Antra and author of Fain will look at the bes entries from all over the world."
+  },
+  {
+    "id": 2,
+    "image": "/team-7.jpg",
+    "name": "Ethan Collins",
+    "role": "Lead Architect",
+    "exp": "8 years",
+    "number": "+1 245 778 901",
+    "desc": "Ethan Collins has directed multiple award-winning architectural projects focused on sustainability and modern living. His portfolio incluye complejos residenciales y espacios públicos diseñados para maximizar luz natural y eficiencia energética."
+  },
+  {
+    "id": 3,
+    "image": "/team-8.jpg",
+    "name": "Sophia Ramirez",
+    "role": "Design Consultant",
+    "exp": "6 years",
+    "number": "+1 312 555 882",
+    "desc": "Sophia Ramirez specializes in client-focused consulting for interior transformations. Su trabajo destaca por integrar estética contemporánea con soluciones ergonómicas para oficinas y viviendas."
+  },
+  {
+    "id": 4,
+    "image": "/team-9.jpg",
+    "name": "Liam Anderson",
+    "role": "Project Manager",
+    "exp": "9 years",
+    "number": "+1 522 731 664",
+    "desc": "Liam Anderson has coordinated large-scale construction and interior refurbishment projects across North America. Es reconocido por su capacidad para liderar equipos multidisciplinares y garantizar plazos estrictos."
+  },
+  {
+    "id": 5,
+    "image": "/team-10.jpg",
+    "name": "Emma Weiss",
+    "role": "Lighting Specialist",
+    "exp": "4 years",
+    "number": "+1 414 929 330",
+    "desc": "Emma Weiss focuses on architectural lighting design, creando ambientes que equilibran funcionalidad y calidez. Ha colaborado en proyectos residenciales, hoteles boutique y espacios comerciales."
+  },
+  {
+    "id": 6,
+    "image": "/team-11.jpg",
+    "name": "Noah Bennett",
+    "role": "Furniture Designer",
+    "exp": "7 years",
+    "number": "+1 637 221 998",
+    "desc": "Noah Bennett diseña mobiliario personalizado con énfasis en materiales naturales y procesos sostenibles. Sus piezas han sido presentadas en ferias internacionales de diseño."
+  },
+  {
+    "id": 7,
+    "image": "/team-12.jpg",
+    "name": "Ava Thompson",
+    "role": "3D Visualization Expert",
+    "exp": "5 years",
+    "number": "+1 702 441 115",
+    "desc": "Ava Thompson crea renders hiperrealistas y recorridos virtuales para estudios de arquitectura e interiorismo. Su dominio de herramientas 3D permite visualizar proyectos con precisión y realismo excepcionales."
+  }
+]
