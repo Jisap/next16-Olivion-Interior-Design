@@ -642,3 +642,74 @@ body {
   width: 100vw;
   background-color: rgba(128, 128, 128, 0.3);
 }
+
+
+.team-card {
+  position: relative;
+}
+
+.team-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #000000d4, #00000000 50%);
+  transition: var(--transition-slow);
+  z-index: 1;
+}
+
+/* Solo aplicar el offset en pantallas grandes (3 columnas) */
+@media (min-width: 1024px) {
+
+  .team-wrapper .team-card:nth-child(2),
+  .team-wrapper .team-card:nth-child(5) {
+    transform: translateY(60px);
+  }
+}
+
+.team-content {
+  position: absolute;
+  left: 5%;
+  z-index: 10;
+  transition: var(--transition-slow);
+  /* Posición por defecto para pantallas pequeñas y medianas */
+  bottom: -50%;
+}
+
+/* Pantallas grandes (1024px - 1919px) */
+@media (min-width: 1024px) and (max-width: 1919px) {
+  .team-content {
+    bottom: -30%;
+  }
+}
+
+/* Pantallas 3xl (1920px+) */
+@media (min-width: 1920px) {
+  .team-content {
+    bottom: -7%;
+  }
+}
+
+.team-card:hover .team-content {
+  bottom: 5%;
+}
+
+.teams-bg {
+  position: relative;
+}
+
+.teams-bg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../public/images/Team-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+}

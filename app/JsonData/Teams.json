@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "image": "/team-1.jpg",
+    "image": "/images/team-1.jpg",
     "name": "Olivia Peterson",
     "role": "Interior Designer",
     "exp": "5 years",
@@ -10,7 +10,7 @@
   },
   {
     "id": 2,
-    "image": "/team-7.jpg",
+    "image": "/images/team-2.jpg",
     "name": "Ethan Collins",
     "role": "Lead Architect",
     "exp": "8 years",
@@ -19,7 +19,7 @@
   },
   {
     "id": 3,
-    "image": "/team-8.jpg",
+    "image": "/images/team-3.jpg",
     "name": "Sophia Ramirez",
     "role": "Design Consultant",
     "exp": "6 years",
@@ -28,7 +28,7 @@
   },
   {
     "id": 4,
-    "image": "/team-9.jpg",
+    "image": "/images/team-4.jpg",
     "name": "Liam Anderson",
     "role": "Project Manager",
     "exp": "9 years",
@@ -37,7 +37,7 @@
   },
   {
     "id": 5,
-    "image": "/team-10.jpg",
+    "image": "/images/team-5.jpg",
     "name": "Emma Weiss",
     "role": "Lighting Specialist",
     "exp": "4 years",
@@ -46,20 +46,11 @@
   },
   {
     "id": 6,
-    "image": "/team-11.jpg",
+    "image": "/images/team-6.jpg",
     "name": "Noah Bennett",
     "role": "Furniture Designer",
     "exp": "7 years",
     "number": "+1 637 221 998",
     "desc": "Noah Bennett diseña mobiliario personalizado con énfasis en materiales naturales y procesos sostenibles. Sus piezas han sido presentadas en ferias internacionales de diseño."
-  },
-  {
-    "id": 7,
-    "image": "/team-12.jpg",
-    "name": "Ava Thompson",
-    "role": "3D Visualization Expert",
-    "exp": "5 years",
-    "number": "+1 702 441 115",
-    "desc": "Ava Thompson crea renders hiperrealistas y recorridos virtuales para estudios de arquitectura e interiorismo. Su dominio de herramientas 3D permite visualizar proyectos con precisión y realismo excepcionales."
   }
 ]
