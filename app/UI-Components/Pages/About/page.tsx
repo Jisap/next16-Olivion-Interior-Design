@@ -19,7 +19,16 @@ import Award3 from "@/public/images/Award-3.jpg"
 import Award4 from "@/public/images/Award-4.jpg"
 import Award5 from "@/public/images/Award-5.jpg"
 import { useState } from 'react'
-
+import { Expertise } from '../../Index/Expertise/page'
+import { Testimonial } from '../../Index/Testimonial/page'
+import { ExpertiseSlider } from '../../Index/ExpertiseSlider/page'
+import partner1 from "@/public/images/partner1.svg"
+import partner2 from "@/public/images/partner2.svg"
+import partner3 from "@/public/images/partner3.svg"
+import partner4 from "@/public/images/partner4.svg"
+import partner5 from "@/public/images/partner5.svg"
+import partner6 from "@/public/images/partner6.svg"
+import { NewsLetter } from '../../Index/Newsletter/page'
 
 const awardsData = [
   {
@@ -53,7 +62,7 @@ const awardsData = [
     image: Award5
   },
 
-]
+];
 
 
 const historyData = [
@@ -82,7 +91,22 @@ const historyData = [
     year: "1990",
     text: "The company is founded by a visionary designer with a focus on personalized and innovative design solutions."
   },
-]
+];
+
+const Partners = [
+  partner1,
+  partner2,
+  partner3,
+  partner4,
+  partner5,
+  partner6,
+  partner1,
+  partner2,
+  partner3,
+  partner4,
+  partner5,
+  partner6,
+];
 
 
 const About = () => {
@@ -300,15 +324,72 @@ const About = () => {
                     {item.year}
                   </span>
 
-                  <h2 className='text-3xl CalSans transition-all duration-300 group-hover:translate-x-full group-hover:text-prim'>
+                  <h2 className='text-xl lg:text-2xl 2xl:text-3xl CalSans transition-all duration-300 group-hover:translate-x-[25%] group-hover:text-prim'>
                     {item.title}
                   </h2>
                 </div>
+
+                <p className='GolosText text-gray-500 hidden md:block'>
+                  {item.category}
+                </p>
               </div>
             ))}
           </div>
         </div>
       </div>
+
+      {/* Expertise */}
+      <div className='bg-[#EEE]'>
+        <Expertise />
+        <ExpertiseSlider />
+      </div>
+
+      {/* Testimonials */}
+      <div className='bg-[#EEE]'>
+        <Testimonial />
+      </div>
+
+      {/* Partners */}
+      <div className="px-[8%] lg:px-[12%] pt-20 pb-10">
+        <Swiper
+          slidesPerView={5}
+          spaceBetween={30}
+          autoplay={{
+            delay: 1500
+          }}
+          modules={[Autoplay]}
+          breakpoints={{
+            1200: {
+              slidesPerView: 5
+            },
+            991: {
+              slidesPerView: 4
+            },
+            575: {
+              slidesPerView: 2
+            },
+            0: {
+              slidesPerView: 2
+            }
+          }}
+          className="partner-swiper"
+        >
+          {
+            Partners.map((partner, index) => (
+              <SwiperSlide key={index}>
+                <Image
+                  src={partner}
+                  alt="partnerImage"
+                  className="partner-img"
+                />
+              </SwiperSlide>
+            ))
+          }
+        </Swiper>
+      </div>
+
+      {/* NewsLetter */}
+      <NewsLetter />
     </>
   )
 }

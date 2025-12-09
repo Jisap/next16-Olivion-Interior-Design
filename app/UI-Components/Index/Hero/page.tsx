@@ -96,6 +96,7 @@ const Hero = () => {
         </div>
       </div>
 
+      {/* Partners */}
       <div className="px-[8%] lg:px-[12%] pb-10">
         <Swiper
           slidesPerView={5}
