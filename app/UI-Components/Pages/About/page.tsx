@@ -18,9 +18,10 @@ import Award2 from "@/public/images/Award-2.jpg"
 import Award3 from "@/public/images/Award-3.jpg"
 import Award4 from "@/public/images/Award-4.jpg"
 import Award5 from "@/public/images/Award-5.jpg"
+import { useState } from 'react'
 
 
-const awardData = [
+const awardsData = [
   {
     year: "2025",
     title: "Best Residential Design",
@@ -85,6 +86,9 @@ const historyData = [
 
 
 const About = () => {
+
+  const [hoveredIndex, setHoveredIndex] = useState<number>(0)
+
   return (
     <>
       {/* Banner superior de la sección */}
@@ -245,6 +249,7 @@ const About = () => {
         </div>
       </div>
 
+      {/* Awards */}
       <div className='px-[8%] lg:px-[12%] py-20 pb-0'>
         <div className="flex flex-col lg:flex-row gap-10">
           <TitleWithDot text="Award & Achievement" />
@@ -253,6 +258,54 @@ const About = () => {
             <h1 className="CalSans text-4xl md:text-6xl mb-5">
               Design That <span className="text-prim">Speals Our Industry</span> Awards.
             </h1>
+          </div>
+        </div>
+
+        <div
+          className="flex flex-col lg:flex-row gap-10 relative py-15"
+          onMouseMove={(e) => {
+            if (hoveredIndex === null) setHoveredIndex(0)
+          }}
+          onMouseLeave={() => setHoveredIndex(0)}
+        >
+          <div className='w-full lg:w-1/3 relative overflow-hidden rounded-2xl'>
+            <div className='relative h-[420px] w-full'>
+              {awardsData.map((item, index) => (
+                // Solo se muestra la imagen sobre la que hace hover en la lista de años
+                <Image
+                  key={index}
+                  src={item.image}
+                  alt="AwardImage"
+                  width={500}
+                  height={500}
+                  className={`
+                    absolute inset-0 h-full w-full object-cover rounded-2xl transition-opacity duration-700 ease-in-out
+                    ${hoveredIndex === index ? "opacity-100" : "opacity-0"}
+                  `}
+                />
+              ))}
+            </div>
+          </div>
+
+          {/* Lista de años */}
+          <div className='w-full lg:w-2/3 '>
+            {awardsData.map((item, index) => (
+              <div
+                key={index}
+                onMouseMove={() => setHoveredIndex(index)}
+                className='award-item-wrapper border-b border-gray-300 py-6 flex justify-between items-center cursor-pointer group'
+              >
+                <div className='flex items-center gap-5'>
+                  <span className='GolosText text-gray-500 text-2xl'>
+                    {item.year}
+                  </span>
+
+                  <h2 className='text-3xl CalSans transition-all duration-300 group-hover:translate-x-full group-hover:text-prim'>
+                    {item.title}
+                  </h2>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
