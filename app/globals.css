@@ -613,5 +613,32 @@ body {
 /* El hover le da transparencia al overlay y quita la capa de oscurecimiento */
 .project-card:hover .project-image::after {
   opacity: 0;
+}
 
+.history-card {
+  position: relative;
+}
+
+/* Círculo de color primario */
+.history-card::before {
+  content: "";
+  position: absolute;
+  top: 180px;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  background-color: var(--prim);
+  border-radius: 50%;
+  z-index: 9;
+}
+
+/* Linea horizontal que une los puntos anteriores */
+.history-card::after {
+  content: "";
+  position: absolute;
+  top: 190px;
+  left: 0;
+  height: 1px;
+  width: 100vw;
+  background-color: rgba(128, 128, 128, 0.3);
 }

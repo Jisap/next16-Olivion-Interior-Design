@@ -3,9 +3,46 @@
 import { TitleWithDot } from '@/lib/TitleWithDot'
 import Link from 'next/link'
 import Image from 'next/image'
-
+import { Swiper, SwiperSlide } from "swiper/react"
+import { Autoplay } from "swiper/modules"
+import "swiper/css"
 import About2 from '@/public/images/About-2.jpg'
 import About4 from '@/public/images/About-4.jpg'
+import timeline1 from '@/public/images/timeline-1.jpg'
+import timeline2 from '@/public/images/timeline-2.jpg'
+import timeline3 from '@/public/images/timeline-3.jpg'
+import timeline4 from '@/public/images/timeline-4.jpg'
+import about2 from '@/public/images/About-2.jpg'
+
+
+
+const historyData = [
+  {
+    image: timeline1,
+    year: "2025",
+    text: "Celebrates 15 years with a retrospective showcase of the company's most iconic projects and milestones."
+  },
+  {
+    image: timeline2,
+    year: "2020",
+    text: "Wins a prestigious national design award for innovative mixed-use development in the city of New York."
+  },
+  {
+    image: timeline3,
+    year: "2018",
+    text: "Participates in a national interior design expo, showcasing innovative concepts and trends in the industry."
+  },
+  {
+    image: timeline4,
+    year: "2010",
+    text: "Open a second office in a neighboring city to meet growing demand and takes on more projects."
+  },
+  {
+    image: about2,
+    year: "1990",
+    text: "The company is founded by a visionary designer with a focus on personalized and innovative design solutions."
+  },
+]
 
 
 const About = () => {
@@ -30,6 +67,7 @@ const About = () => {
         </div>
       </div>
 
+      {/* Contenido de la sección */}
       <div className='px-[8%] lg:px-[12%] py-20'>
         <div className="flex flex-col lg:flex-row gap-10">
           <div className='w-full lg:w-2/3 pt-8'>
@@ -92,6 +130,80 @@ const About = () => {
         </div>
       </div>
 
+      {/* Video */}
+      <div className='video w-full pb-10'>
+        <video
+          src="/images/Video-bg.mp4"
+          autoPlay
+          loop
+          muted
+          className='w-full h-full object-cover'
+        />
+      </div>
+
+      <div className='px-[8%] lg:px-[12%] py-20 pb-0'>
+        <div className="flex flex-col lg:flex-row gap-10">
+          <TitleWithDot text="About Olivion" />
+
+          <div className="w-full lg:w-2/3">
+            <h1 className="CalSans text-4xl md:text-6xl mb-5">
+              Our History <span className="text-prim">Is Full Of Interesting</span> Stages And Events.
+            </h1>
+          </div>
+        </div>
+
+        <div className='history-swiper py-15 pb-0'>
+          <Swiper
+            slidesPerView={4}
+            spaceBetween={30}
+            loop={true}
+            autoplay={{
+              delay: 1500,
+              disableOnInteraction: false
+            }}
+            speed={200}
+            modules={[Autoplay]}
+            breakpoints={{
+              1200: {
+                slidesPerView: 4
+              },
+              991: {
+                slidesPerView: 2
+              },
+              575: {
+                slidesPerView: 1
+              },
+              0: {
+                slidesPerView: 1
+              }
+            }}
+          >
+            {
+              historyData.map((item, index) => (
+                <SwiperSlide key={index}>
+                  <div className='history-card'>
+                    <Image
+                      src={item.image}
+                      alt="HistoryImage"
+                      className="rounded-2xl w-40 h-40 object-cover"
+                    />
+
+                    <div className='history-content py-15'>
+                      <h2 className='text-3xl CalSans font-bold mb-5'>
+                        {item.year}
+                      </h2>
+
+                      <p className='GolosText text-sm text-gray-500'>
+                        {item.text}
+                      </p>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))
+            }
+          </Swiper>
+        </div>
+      </div>
     </>
   )
 }
