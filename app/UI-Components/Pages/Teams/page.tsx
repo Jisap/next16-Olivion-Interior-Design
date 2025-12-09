@@ -4,6 +4,39 @@ import Link from "next/link"
 import TeamsData from "@/app/JsonData/Teams.json"
 import { TitleWithDot } from "@/lib/TitleWithDot"
 import Image from "next/image"
+import quote from "@/public/images/quote.png"
+import team1 from "@/public/images/team-1.jpg"
+import team2 from "@/public/images/team-2.jpg"
+import team3 from "@/public/images/team-3.jpg"
+
+import { Swiper, SwiperSlide } from "swiper/react"
+import { Autoplay } from "swiper/modules"
+import "swiper/css"
+
+const testimonials = [
+  {
+    id: 1,
+    image: team1,
+    name: "Olivia Peterson",
+    role: "Co-founder",
+    message: "As a Co-founder, Olivia Peterson values simplicity and elegance - and this design team delivered both perfectly. her new modern living room feels open, calm, and sophisticated. The neutral tones and minimalist design create a beatigul harmony that majes every guest admire her home's atmosphere."
+  },
+  {
+    id: 2,
+    image: team2,
+    name: "Ethan Collins",
+    role: "Lead Architect",
+    message: "Ethan Collins has directed multiple award-winning architectural projects focused on sustainability and modern living. His portfolio incluye complejos residenciales y espacios públicos diseñados para maximizar luz natural y eficiencia energética."
+  },
+  {
+    id: 3,
+    image: team3,
+    name: "Sophia Ramirez",
+    role: "Design Consultant",
+    message: "Sophia Ramirez specializes in client-focused consulting for interior transformations. Su trabajo destaca por integrar estética contemporánea con soluciones ergonómicas para oficinas y viviendas."
+  }
+]
+
 
 const Teams = () => {
   return (
@@ -80,6 +113,61 @@ const Teams = () => {
             </div>
           ))}
         </div>
+      </div>
+
+      {/* Teams testimonials */}
+      <div className="mt-30 px-[8%] lg:px-[12%] teams-bg py-20 flex flex-col justify-center items-center">
+        <Image
+          src={quote}
+          alt="quote"
+          width={130}
+          height={130}
+        />
+
+        <Swiper
+          slidesPerView={1}
+          spaceBetween={0}
+          loop={true}
+          modules={[Autoplay]}
+          autoplay={{
+            delay: 1800,
+          }}
+          className="w-full justify-center items-center lg:w-[70%]"
+        >
+          {testimonials.map((testimonial) => (
+            <SwiperSlide key={testimonial.id}>
+              <div className="flex flex-col justify-center items-center">
+                <p className="GolosText text-2xl font-semibold text-center">
+                  "{testimonial.message}"
+                </p>
+
+                <div className="flex items-center gap-5 mt-5">
+                  <Image
+                    src={testimonial.image}
+                    alt={testimonial.name}
+                    width={150}
+                    height={100}
+                    className="rounded-2xl"
+                  />
+
+                  <div className="">
+                    <h2 className="GolosText font-bold text-2xl">
+                      {testimonial.name}
+                    </h2>
+
+                    <p className="GolosText font-semibold">
+                      {testimonial.role}
+                    </p>
+                  </div>
+                </div>
+
+
+
+
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </>
   )
