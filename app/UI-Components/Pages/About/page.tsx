@@ -13,7 +13,46 @@ import timeline2 from '@/public/images/timeline-2.jpg'
 import timeline3 from '@/public/images/timeline-3.jpg'
 import timeline4 from '@/public/images/timeline-4.jpg'
 import about2 from '@/public/images/About-2.jpg'
+import Award1 from "@/public/images/Award-1.jpg"
+import Award2 from "@/public/images/Award-2.jpg"
+import Award3 from "@/public/images/Award-3.jpg"
+import Award4 from "@/public/images/Award-4.jpg"
+import Award5 from "@/public/images/Award-5.jpg"
 
+
+const awardData = [
+  {
+    year: "2025",
+    title: "Best Residential Design",
+    category: "Interior Design",
+    image: Award1
+  },
+  {
+    year: "2024",
+    title: "Top Commercial Design",
+    category: "Architecture",
+    image: Award2
+  },
+  {
+    year: "2023",
+    title: "Sustainable Design Award",
+    category: "Community Center",
+    image: Award3
+  },
+  {
+    year: "2022",
+    title: "Creative Office Space Award",
+    category: "Corporation Building",
+    image: Award4
+  },
+  {
+    year: "2020",
+    title: "Emerging Designer of the Year",
+    category: "Interior Design",
+    image: Award5
+  },
+
+]
 
 
 const historyData = [
@@ -141,6 +180,7 @@ const About = () => {
         />
       </div>
 
+      {/* Timeline */}
       <div className='px-[8%] lg:px-[12%] py-20 pb-0'>
         <div className="flex flex-col lg:flex-row gap-10">
           <TitleWithDot text="About Olivion" />
@@ -202,6 +242,18 @@ const About = () => {
               ))
             }
           </Swiper>
+        </div>
+      </div>
+
+      <div className='px-[8%] lg:px-[12%] py-20 pb-0'>
+        <div className="flex flex-col lg:flex-row gap-10">
+          <TitleWithDot text="Award & Achievement" />
+
+          <div className="w-full lg:w-2/3">
+            <h1 className="CalSans text-4xl md:text-6xl mb-5">
+              Design That <span className="text-prim">Speals Our Industry</span> Awards.
+            </h1>
+          </div>
         </div>
       </div>
     </>
