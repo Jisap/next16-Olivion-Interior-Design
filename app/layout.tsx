@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { Navbar } from "./Components/Navbar/Navbar";
 import { Footer } from "./Components/Footer/Footer";
+import Clientlayout from "./Components/Clientlayout";
 
 const audiowide = Audiowide({
   weight: ["400"],
@@ -39,9 +40,9 @@ export default function RootLayout({
       <body
         className={`${audiowide.variable} ${golostext.variable} ${calsans.variable} antialiased`}
       >
-        <Navbar />
-        {children}
-        <Footer />
+        <Clientlayout>
+          {children}
+        </Clientlayout>
       </body>
     </html>
   );
