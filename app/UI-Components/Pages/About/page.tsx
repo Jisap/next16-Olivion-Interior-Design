@@ -250,7 +250,8 @@ const About = () => {
               historyData.map((item, index) => (
                 <SwiperSlide key={index}>
                   <div className='history-card'>
-                    <div className="w-40 h-40 flex items-center justify-center">
+                    {/* Contenedor con dimensiones fijas y centrado flex */}
+                    <div className="w-40 h-40 flex items-center justify-center overflow-hidden">
                       <Image
                         src={item.image}
                         alt="HistoryImage"
