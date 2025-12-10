@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react"
+import { useEffect, useState, useRef } from "react"
 
 type NavLink = {
   label: string;
@@ -74,7 +74,7 @@ const Navbar = () => {
       w-full transition-all bg-white duration-500 fixed top-0 left-0 z-100
       ${isScrolled ? "bg-white shadow-md" : "bg-transparent"}
     `}>
-      <div className="flex items-center justify-between px-[8%] lf:px-[12%] py-5">
+      <div className="flex items-center justify-between px-[8%] lg:px-[12%] py-5">
         <div className="flex items-center gap-5">
           {/* Logo */}
           <Link href="/" className="text-5xl font-bold Audiowide text-black">
@@ -92,7 +92,7 @@ const Navbar = () => {
                     </Link>
                     <i className="ri-arrow-down-s-line"></i>
 
-                    <div className="absolute left-0 top-8 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 bg-white shadow-xl border border-gray-50/10 rounded-lg z-500 min-w-[180px]">
+                    <div className="absolute left-0 top-8 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 bg-white shadow-xl border border-gray-50/10 rounded-lg z-9999 min-w-[180px]">
                       {link.dropdown.map((item) => (
                         <Link
                           key={item.label}
@@ -130,8 +130,9 @@ const Navbar = () => {
           </button>
 
           <Link href="/UI-Components/Pages/Contact">
-            <button className="flex bg-prim text-white font-medium px-4 py-2 lg:px-6 lg:py-3 rounded-full hover:bg-white hover:text-black border border-transparent hover:border-gray-400 cursor-pointer transition-all duration-300">
-              Get a Quote
+            <button className="bg-prim text-white font-medium px-4 py-2 lg:px-6 lg:py-3 rounded-full hover:bg-white hover:text-black border border-transparent hover:border-gray-400 cursor-pointer transition-all duration-300 text-sm lg:text-base whitespace-nowrap">
+              <span className="hidden sm:inline">Get a Quote</span>
+              <span className="sm:hidden">Quote</span>
             </button>
           </Link>
 
@@ -165,7 +166,7 @@ const Navbar = () => {
                 <>
                   <button
                     onClick={() => togleDropdown(link.label)}
-                    className="w-full flex justify-between items-center px-4 py-3 text-left"
+                    className="w-full flex justify-between items-center px-4 py-3 text-left text-lg font-medium"
                   >
                     {link.label}
                     <i className={`ri-arrow-down-s-line transition-transform duration-300 ${openDropdowns[link.label] ? "rotate-180" : ""}`}></i>
@@ -179,7 +180,7 @@ const Navbar = () => {
                       <Link
                         key={item.label}
                         href={item.href}
-                        className="block py-2 font-semibold hover:text-prim transition border-b border-gray-700/50"
+                        className="block py-2 text-base font-medium hover:text-prim transition border-b border-gray-700/50 pl-2"
                         onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                       >
                         {item.label}
@@ -190,7 +191,7 @@ const Navbar = () => {
               ) : (
                 <Link
                   href={link.href}
-                  className="block py-3 px-4 text-text hover:text-prim transition font-medium"
+                  className="block py-3 px-4 text-text hover:text-prim transition text-lg font-medium"
                   onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 >
                   {link.label}

@@ -1,6 +1,7 @@
 "use client"
 
 import Image from "next/image"
+import { useEffect, useRef, useState } from "react"
 import service1 from "../../../../public/images/service-1.jpg"
 import service2 from "../../../../public/images/service-2.jpg"
 import service3 from "../../../../public/images/service-3.jpg"
@@ -46,15 +47,76 @@ const servicesData = [
   }
 ]
 
+const ServiceCard = ({ service }: { service: typeof servicesData[0] }) => {
+  const cardRef = useRef<HTMLDivElement>(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+          }
+        });
+      },
+      {
+        threshold: 0.2, // Se activa cuando el 20% de la tarjeta es visible
+        rootMargin: "0px 0px -50px 0px", // Se activa un poco antes de que esté completamente visible
+      }
+    );
+
+    if (cardRef.current) {
+      observer.observe(cardRef.current);
+    }
+
+    return () => {
+      if (cardRef.current) {
+        observer.unobserve(cardRef.current);
+      }
+    };
+  }, []);
+
+  return (
+    <div
+      ref={cardRef}
+      className={`service-card border-b border-gray-400 cursor-pointer py-2 flex flex-col md:flex-row justify-between items-start md:items-center gap-5 mt-4 ${isVisible ? "service-card-visible" : ""}`}
+    >
+      <div className="flex flex-col md:flex-row w-full md:w-[70%] gap-2 md:gap-8">
+        <h4 className="text-4xl CalSans">{service.id}</h4>
+
+        <div className="service-content">
+          <h2 className="mb-3 text-4xl CalSans">
+            {service.title}
+          </h2>
+
+          <p className="text-gray-400 GolosText">
+            {service.description}
+          </p>
+        </div>
+      </div>
+
+      <div className="overflow-hidden h-full md:h-[210px] w-full md:w-[300px]">
+        <Image
+          src={service.image}
+          alt={service.alt}
+          className="w-full service-img object-cover rounded-2xl border-2 border-black"
+        />
+      </div>
+      <i className="bi bi-arrow-up-right transition-all duration-300" />
+    </div>
+  );
+};
+
 const Services = () => {
   return (
     <>
-      <div className="px-[8%] lg:px-[12%] pt-20 pb-60 service relative">
+      <div className="px-[8%] lg:px-[12%] pt:8 lg:pt-20 pb-60 service relative">
         <div className="flex flex-col lg:flex-row gap-10">
           <TitleWithDot text="Our Services" />
 
           <div className="w-full lg:w-2/3">
-            <h1 className="CalSans text-4xl md:text-6xl mb-5">
+            <h1 className="CalSans text-5xl md:text-6xl mb-5">
               Explore our <span className="text-prim">Comprehensive interior design</span> services
             </h1>
 
@@ -65,30 +127,7 @@ const Services = () => {
         </div>
 
         {servicesData.map((service) => (
-          <div key={service.id} className="service-card border-b border-gray-400 cursor-pointer py-2 flex flex-col md:flex-row justify-between items-start md:items-center gap-5 mt-4">
-            <div className="flex flex-col md:flex-row w-full md:w-[70%] gap-2 md:gap-8">
-              <h4 className="text-4xl CalSans">{service.id}</h4>
-
-              <div className="service-content">
-                <h2 className="mb-3 text-4xl CalSans">
-                  {service.title}
-                </h2>
-
-                <p className="text-gray-400 GolosText">
-                  {service.description}
-                </p>
-              </div>
-            </div>
-
-            <div className="overflow-hidden h-full md:h-[210px] w-full md:w-[300px]">
-              <Image
-                src={service.image}
-                alt={service.alt}
-                className="w-full service-img object-cover rounded-2xl border-2 border-black"
-              />
-            </div>
-            <i className="bi bi-arrow-up-right transition-all duration-300" />
-          </div>
+          <ServiceCard key={service.id} service={service} />
         ))}
       </div>
     </>

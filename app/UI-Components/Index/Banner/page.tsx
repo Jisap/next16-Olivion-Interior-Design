@@ -15,7 +15,7 @@ const Banner = () => {
             isCentered={true}
           />
 
-          <h1 className="CalSans text-4xl md:text-8xl w-full lg:w-[70%] my-5 text-white text-center">
+          <h1 className="CalSans text-5xl md:text-8xl w-full lg:w-[70%] my-5 text-white text-center">
             Let's Start <span className="text-prim">Your New Dream</span> Project
           </h1>
 

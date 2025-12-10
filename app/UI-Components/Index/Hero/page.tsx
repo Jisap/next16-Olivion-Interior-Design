@@ -35,7 +35,7 @@ const Hero = () => {
       <div className="hero">
         <div className="hero-bg-elm"></div>
         <div className="hero-bg-elm2"></div>
-        <div className="w-full px-[8%] lg:px-[12%] py-10">
+        <div className="w-full px-[8%] lg:px-[12%] py-20 lg:py-10">
           <div className="flex flex-col lg:flex-row gap-5 justify-between items-center">
             <div className="w-full lg:w-1/2 relative">
               <div>

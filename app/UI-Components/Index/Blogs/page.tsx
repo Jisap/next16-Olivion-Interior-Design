@@ -12,14 +12,14 @@ import Link from 'next/link'
 const Blogs = () => {
   return (
     <>
-      <div className="px-[8%] lg:px-[12%] py-30 pb-20">
+      <div className="px-[8%] lg:px-[12%] py-35 pb-20">
         <div className='flex flex-col lg:flex-row gap-10'>
           <TitleWithDot
             text="Latest Blogs"
           />
 
           <div className="w-full lg:w-2/3">
-            <h1 className="CalSans text-4xl md:text-7xl mb-5 w-full 3xl:w-[80%]">
+            <h1 className="CalSans text-5xl md:text-7xl mb-5 w-full 3xl:w-[80%]">
               Take a look <span className="text-prim">Our latest blog</span> & Articles.
             </h1>
           </div>

@@ -37,12 +37,12 @@ const statsData = [
 export const About = () => {
   return (
     <>
-      <div className="px-[8%] lg:px-[12%] py-20 about">
+      <div className="px-[8%] lg:px-[12%] py-8 lg:py-20 about">
         <div className="flex flex-col lg:flex-row gap-10">
           <TitleWithDot text="About Olivion" />
 
           <div className="w-full lg:w-2/3">
-            <h1 className="CalSans text-4xl md:text-7xl">
+            <h1 className="CalSans text-5xl md:text-7xl">
               We Shape <span className="text-prim">Interior Designs, Crafting</span> Timeless and Inspiring Spaces
             </h1>
           </div>

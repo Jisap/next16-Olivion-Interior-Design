@@ -58,7 +58,7 @@ const Faq = () => {
           <TitleWithDot text="Popular Queries" />
 
           <div className="w-full lg:w-2/3">
-            <h1 className="CalSans text-4xl md:text-7xl mb-5">
+            <h1 className="CalSans text-5xl md:text-7xl mb-5">
               Quik and clear <span className="text-prim"> Answers To Your Key</span> services
             </h1>
           </div>
