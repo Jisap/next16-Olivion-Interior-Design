@@ -1,7 +1,7 @@
 "use client"
 
 import Link from 'next/link';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import Lightbox from 'yet-another-react-lightbox';
 import 'yet-another-react-lightbox/styles.css';
 
@@ -18,28 +18,47 @@ import galleryImg10 from '@/public/images/gallery-img10.jpg';
 import galleryImg11 from '@/public/images/gallery-img11.jpg';
 import galleryImg12 from '@/public/images/gallery-img12.jpg';
 import { useState } from 'react';
-import { TitleWithDot } from '@/lib/TitleWithDot';
 
+const allImages = [
+  { src: galleryImg1, alt: 'Gallery Image 1' },
+  { src: galleryImg2, alt: 'Gallery Image 2' },
+  { src: galleryImg3, alt: 'Gallery Image 3' },
+  { src: galleryImg4, alt: 'Gallery Image 4' },
+  { src: galleryImg5, alt: 'Gallery Image 5' },
+  { src: galleryImg6, alt: 'Gallery Image 6' },
+  { src: galleryImg7, alt: 'Gallery Image 7' },
+  { src: galleryImg8, alt: 'Gallery Image 8' },
+  { src: galleryImg9, alt: 'Gallery Image 9' },
+  { src: galleryImg10, alt: 'Gallery Image 10' },
+  { src: galleryImg11, alt: 'Gallery Image 11' },
+  { src: galleryImg12, alt: 'Gallery Image 12' },
+];
 
+// Componente reutilizable para cada imagen de la galería
+const GalleryImage = ({
+  image,
+  index,
+  setIndex
+}: {
+  image: { src: StaticImageData, alt: string },
+  index: number, setIndex: (index: number) => void
+}) => (
+
+  <div className='gallery-image' onClick={() => setIndex(index)}>
+    <Image
+      src={image.src}
+      alt={image.alt}
+      className='rounded-2xl object-cover cursor-pointer w-full h-full'
+      placeholder='blur'
+    />
+  </div>
+);
 
 const Gallery = () => {
 
   const [index, setIndex] = useState(-1);
 
-  const images = [
-    { src: galleryImg1.src },
-    { src: galleryImg2.src },
-    { src: galleryImg3.src },
-    { src: galleryImg4.src },
-    { src: galleryImg5.src },
-    { src: galleryImg6.src },
-    { src: galleryImg7.src },
-    { src: galleryImg8.src },
-    { src: galleryImg9.src },
-    { src: galleryImg10.src },
-    { src: galleryImg11.src },
-    { src: galleryImg12.src },
-  ];
+  const lightboxImages = allImages.map(img => ({ src: img.src.src }));
 
   return (
     <>
@@ -62,147 +81,80 @@ const Gallery = () => {
         </div>
       </div>
 
+      <Lightbox
+        open={index > -1}
+        index={index}
+        close={() => setIndex(-1)}
+        slides={lightboxImages}
+      />
+
       <div className='px-[8%] lg:px-[12%] py-20'>
+        {/* --- Primera Fila --- */}
         <div className='flex flex-col lg:flex-row gap-5'>
           <div className='w-full lg:w-1/2'>
-            <div className='gallery-image' onClick={() => setIndex(0)}>
-              <Image
-                src={galleryImg1}
-                alt="gallery"
-                className='rounded-2xl object-cover cursor-pointer'
-              />
-            </div>
+            <GalleryImage
+              image={allImages[0]}
+              index={0}
+              setIndex={setIndex}
+            />
           </div>
-
           <div className='w-full lg:w-1/2'>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5'>
-              <div className='gallery-image' onClick={() => setIndex(1)}>
-                <Image
-                  src={galleryImg2}
-                  alt="gallery"
-                  className='rounded-2xl object-cover cursor-pointer'
+              {allImages.slice(1, 5).map((image, i) => (
+                <GalleryImage
+                  key={i}
+                  image={image}
+                  index={1 + i}
+                  setIndex={setIndex}
                 />
-              </div>
-
-              <div className='gallery-image' onClick={() => setIndex(2)}>
-                <Image
-                  src={galleryImg3}
-                  alt="gallery"
-                  className='rounded-2xl object-cover cursor-pointer'
-                />
-              </div>
-
-              <div className='gallery-image' onClick={() => setIndex(3)}>
-                <Image
-                  src={galleryImg4}
-                  alt="gallery"
-                  className='rounded-2xl object-cover cursor-pointer'
-                />
-              </div>
-
-              <div className='gallery-image' onClick={() => setIndex(5)}>
-                <Image
-                  src={galleryImg5}
-                  alt="gallery"
-                  className='rounded-2xl object-cover cursor-pointer'
-                />
-              </div>
+              ))}
             </div>
           </div>
         </div>
 
+        {/* --- Segunda Fila --- */}
         <div className='flex flex-col-reverse lg:flex-row gap-5 mt-10'>
           <div className='w-full lg:w-1/2'>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5'>
-              <div className='gallery-image' onClick={() => setIndex(5)}>
-                <Image
-                  src={galleryImg6}
-                  alt="gallery"
-                  className='rounded-2xl object-cover cursor-pointer'
+              {allImages.slice(5, 9).map((image, i) => (
+                <GalleryImage
+                  key={i}
+                  image={image}
+                  index={5 + i}
+                  setIndex={setIndex}
                 />
-              </div>
-
-              <div className='gallery-image' onClick={() => setIndex(6)}>
-                <Image
-                  src={galleryImg7}
-                  alt="gallery"
-                  className='rounded-2xl object-cover cursor-pointer'
-                />
-              </div>
-
-              <div className='gallery-image' onClick={() => setIndex(8)}>
-                <Image
-                  src={galleryImg8}
-                  alt="gallery"
-                  className='rounded-2xl object-cover cursor-pointer'
-                />
-              </div>
-
-              <div className='gallery-image' onClick={() => setIndex(8)}>
-                <Image
-                  src={galleryImg9}
-                  alt="gallery"
-                  className='rounded-2xl object-cover cursor-pointer'
-                />
-              </div>
+              ))}
             </div>
           </div>
-
           <div className='w-full lg:w-1/2'>
-            <div className='gallery-image' onClick={() => setIndex(9)}>
-              <Image
-                src={galleryImg10}
-                alt="gallery"
-                className='rounded-2xl object-cover cursor-pointer'
-              />
-            </div>
+            <GalleryImage
+              image={allImages[9]}
+              index={9}
+              setIndex={setIndex}
+            />
           </div>
         </div>
 
+        {/* --- Tercera Fila --- */}
         <div className='flex flex-col lg:flex-row gap-5 mt-10'>
           <div className='w-full lg:w-1/2'>
-            <div className='gallery-image' onClick={() => setIndex(0)}>
-              <Image
-                src={galleryImg1}
-                alt="gallery"
-                className='rounded-2xl object-cover cursor-pointer'
-              />
-            </div>
+            <GalleryImage
+              image={allImages[10]}
+              index={10}
+              setIndex={setIndex}
+            />
           </div>
-
           <div className='w-full lg:w-1/2'>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5'>
-              <div className='gallery-image' onClick={() => setIndex(1)}>
-                <Image
-                  src={galleryImg2}
-                  alt="gallery"
-                  className='rounded-2xl object-cover cursor-pointer'
+              {/* Aquí puedes elegir qué imágenes mostrar. Por ejemplo, las últimas 4. */}
+              {allImages.slice(8, 12).map((image, i) => (
+                <GalleryImage
+                  key={i}
+                  image={image}
+                  index={8 + i}
+                  setIndex={setIndex}
                 />
-              </div>
-
-              <div className='gallery-image' onClick={() => setIndex(10)}>
-                <Image
-                  src={galleryImg11}
-                  alt="gallery"
-                  className='rounded-2xl object-cover cursor-pointer'
-                />
-              </div>
-
-              <div className='gallery-image' onClick={() => setIndex(11)}>
-                <Image
-                  src={galleryImg12}
-                  alt="gallery"
-                  className='rounded-2xl object-cover cursor-pointer'
-                />
-              </div>
-
-              <div className='gallery-image' onClick={() => setIndex(5)}>
-                <Image
-                  src={galleryImg5}
-                  alt="gallery"
-                  className='rounded-2xl object-cover cursor-pointer'
-                />
-              </div>
+              ))}
             </div>
           </div>
         </div>
