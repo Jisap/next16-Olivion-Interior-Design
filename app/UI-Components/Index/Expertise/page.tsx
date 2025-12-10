@@ -35,7 +35,7 @@ const ExpertiseData = [
 ]
 
 
-export const Expertise = () => {
+const Expertise = () => {
   return (
     <>
       <div className="expertise bg-[#241c18]">
@@ -88,3 +88,5 @@ export const Expertise = () => {
     </>
   )
 }
+
+export default Expertise;

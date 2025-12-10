@@ -3,7 +3,7 @@
 import { TitleWithDot } from '@/lib/TitleWithDot'
 
 
-export const NewsLetter = () => {
+const NewsLetter = () => {
   return (
     <>
       <div className='px-[8%] lg:px-[12%] pt-20 pb-20 newsletter relative'>
@@ -37,3 +37,5 @@ export const NewsLetter = () => {
     </>
   )
 }
+
+export default NewsLetter;

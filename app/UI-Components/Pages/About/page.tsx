@@ -19,16 +19,16 @@ import Award3 from "@/public/images/Award-3.jpg"
 import Award4 from "@/public/images/Award-4.jpg"
 import Award5 from "@/public/images/Award-5.jpg"
 import { useState } from 'react'
-import { Expertise } from '../../Index/Expertise/page'
-import { Testimonial } from '../../Index/Testimonial/page'
-import { ExpertiseSlider } from '../../Index/ExpertiseSlider/page'
+import Expertise from '../../Index/Expertise/page'
+import Testimonial from '../../Index/Testimonial/page'
+import ExpertiseSlider from '../../Index/ExpertiseSlider/page'
 import partner1 from "@/public/images/partner1.svg"
 import partner2 from "@/public/images/partner2.svg"
 import partner3 from "@/public/images/partner3.svg"
 import partner4 from "@/public/images/partner4.svg"
 import partner5 from "@/public/images/partner5.svg"
 import partner6 from "@/public/images/partner6.svg"
-import { NewsLetter } from '../../Index/Newsletter/page'
+import NewsLetter from '../../Index/Newsletter/page'
 
 const awardsData = [
   {

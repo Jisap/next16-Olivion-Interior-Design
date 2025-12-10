@@ -27,7 +27,7 @@ const TestimonialData = [
 ]
 
 
-export const Testimonial = () => {
+const Testimonial = () => {
   return (
     <>
       <div className='testimonial flex flex-col-reverse lg:flex-row gap-5 bg-[#EEE]'>
@@ -116,4 +116,6 @@ export const Testimonial = () => {
     </>
   )
 }
+
+export default Testimonial;
 

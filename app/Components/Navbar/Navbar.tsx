@@ -45,7 +45,7 @@ const navLinks: NavLink[] = [
 
 ]
 
-export const Navbar = () => {
+const Navbar = () => {
 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [openDropdowns, setOpenDropdowns] = useState<Record<string, boolean>>({});
@@ -203,3 +203,5 @@ export const Navbar = () => {
     </nav>
   )
 }
+
+export default Navbar;

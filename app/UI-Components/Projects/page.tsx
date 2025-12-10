@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import ProjectsData from '@/app/JsonData/Projects.json'
-import { NewsLetter } from '../Index/Newsletter/page'
+import NewsLetter from '../Index/Newsletter/page'
 
 const Projects = () => {
   return (

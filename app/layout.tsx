@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import { Audiowide, Golos_Text } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
-import { Navbar } from "./Components/Navbar/Navbar";
-import { Footer } from "./Components/Footer/Footer";
 import Clientlayout from "./Components/Clientlayout";
 
 const audiowide = Audiowide({

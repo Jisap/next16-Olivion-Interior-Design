@@ -1,7 +1,6 @@
 "use client"
 
 import { motion, useScroll, useTransform } from "framer-motion"
-import Image from "next/image"
 import { useRef } from "react"
 
 
@@ -47,7 +46,7 @@ const paralexData = [
   },
 ]
 
-export const Paralex = () => {
+const Paralex = () => {
   return (
     <div className="mt-20 pb-30">
       {paralexData.map((item) => (
@@ -104,3 +103,5 @@ function ParalexSection({ item }: { item: any }) {
     </motion.div>
   )
 }
+
+export default Paralex;

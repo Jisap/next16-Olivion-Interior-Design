@@ -33,7 +33,7 @@ const PricingPlansData = [
 ]
 
 
-export const PricingPlans = () => {
+const PricingPlans = () => {
   return (
     <>
       <div className='px-[8%] lg:px-[12%] py-15 mt-0 md:mt-[10%]'>
@@ -95,4 +95,6 @@ export const PricingPlans = () => {
     </>
   )
 }
+
+export default PricingPlans;
 

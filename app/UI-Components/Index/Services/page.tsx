@@ -46,7 +46,7 @@ const servicesData = [
   }
 ]
 
-export const Services = () => {
+const Services = () => {
   return (
     <>
       <div className="px-[8%] lg:px-[12%] pt-20 pb-60 service relative">
@@ -94,3 +94,5 @@ export const Services = () => {
     </>
   )
 }
+
+export default Services;

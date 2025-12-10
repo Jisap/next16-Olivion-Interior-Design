@@ -1,8 +1,8 @@
 "use client"
 
 import { usePathname } from "next/navigation"
-import { Navbar } from "./Navbar/Navbar";
-import { Footer } from "./Footer/Footer";
+import Navbar from "./Navbar/Navbar";
+import Footer from "./Footer/Footer";
 
 const Clientlayout = ({ children }: { children: React.ReactNode }) => {
 

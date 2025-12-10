@@ -6,7 +6,7 @@ import { ImInstagram } from "react-icons/im"
 
 
 
-export const Footer = () => {
+const Footer = () => {
   return (
     <>
       <div className="px-[8%] lg:px-[12%] py-20 pb-0 footer relative">
@@ -150,3 +150,5 @@ export const Footer = () => {
     </>
   )
 }
+
+export default Footer;

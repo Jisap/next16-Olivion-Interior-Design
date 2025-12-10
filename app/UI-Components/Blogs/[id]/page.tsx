@@ -6,7 +6,7 @@ import { useParams } from 'next/navigation'
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import quote from '@/public/images/quote.png'
-import { NewsLetter } from '../../Index/Newsletter/page'
+import NewsLetter from '../../Index/Newsletter/page'
 
 interface Blog {
   id: string;

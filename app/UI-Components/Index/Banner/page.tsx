@@ -3,7 +3,7 @@
 import { TitleWithDot } from "@/lib/TitleWithDot"
 import Link from "next/link"
 
-export const Banner = () => {
+const Banner = () => {
   return (
     <>
       <div className="px-[8%] lg:px-[12%] py-30 banner h-[50vh] md:h-[90vh] flex flex-col items-center justify-center">
@@ -30,3 +30,5 @@ export const Banner = () => {
     </>
   )
 }
+
+export default Banner;

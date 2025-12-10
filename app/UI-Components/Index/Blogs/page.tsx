@@ -9,7 +9,7 @@ import Link from 'next/link'
 
 
 
-export const Blogs = () => {
+const Blogs = () => {
   return (
     <>
       <div className="px-[8%] lg:px-[12%] py-30 pb-20">
@@ -107,4 +107,6 @@ export const Blogs = () => {
     </>
   )
 }
+
+export default Blogs;
 

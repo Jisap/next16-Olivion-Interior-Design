@@ -18,7 +18,7 @@ import galleryImg10 from '@/public/images/gallery-img10.jpg';
 import galleryImg11 from '@/public/images/gallery-img11.jpg';
 import galleryImg12 from '@/public/images/gallery-img12.jpg';
 import { useState } from 'react';
-import { NewsLetter } from '../../Index/Newsletter/page';
+import NewsLetter from '../../Index/Newsletter/page';
 
 const allImages = [
   { src: galleryImg1, alt: 'Gallery Image 1' },

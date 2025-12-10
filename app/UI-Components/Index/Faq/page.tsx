@@ -39,7 +39,7 @@ const faqData = [
   },
 ]
 
-export const Faq = () => {
+const Faq = () => {
 
   const [openIndex, setOpenIndex] = useState(null);
 
@@ -138,3 +138,5 @@ export const Faq = () => {
     </>
   )
 }
+
+export default Faq;
