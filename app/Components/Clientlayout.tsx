@@ -13,7 +13,9 @@ const Clientlayout = ({ children }: { children: React.ReactNode }) => {
     <>
       {!hideLayout && <Navbar />}
 
-      {children}
+      <main className="relative w-full max-w-screen overflow-clip z-10">
+        {children}
+      </main>
 
       {!hideLayout && <Footer />}
     </>

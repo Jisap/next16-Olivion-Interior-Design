@@ -23,7 +23,7 @@ const NewsLetter = () => {
             Join our newsletter. Learn something new, gain access to exclusive content, and stay informed with the lastest updates in the industry.
           </p>
 
-          <div className='email-details border-b border-gray-300 w-[450px] flex items-center transition-all duration-300 hover:border-prim cursor-pointer'>
+          <div className='email-details border-b border-gray-300 max-w-[450px] w-full flex items-center transition-all duration-300 hover:border-prim cursor-pointer'>
             <input
               type="email"
               placeholder='Enter your email'

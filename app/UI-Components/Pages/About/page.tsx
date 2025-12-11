@@ -117,7 +117,7 @@ const About = () => {
     <>
       {/* Banner superior de la sección */}
       <div className='section-bg text-white flex flex-col'>
-        <h1 className='text-8xl GolosText mt-15'>
+        <h1 className='text-6xl lg:text-8xl GolosText mt-15'>
           About Us
         </h1>
 
